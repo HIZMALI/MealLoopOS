@@ -1,6 +1,6 @@
 # Reproducing the release
 
-Use a Git checkout with Python 3.14.0 and Node 24.13.1 on Windows. `scripts/setup.ps1` creates a new virtual environment, installs the exact 41-package Python lock and npm lock, and imports the bundled official workbook. `npm ci` verifies npm integrity digests; Python pins do not include wheel hashes. Other environments, Linux/cloud deployment and PostgreSQL remain unverified.
+Use a Git checkout with Python 3.14.0 and Node 24.13.1 on Windows. `scripts/setup.ps1` creates a new virtual environment, installs the exact 41-package Python lock and npm lock, and imports the bundled official workbook. `npm ci` verifies npm integrity digests; Python pins do not include wheel hashes. Render's native Linux build and PUBLIC_DEMO runtime have also been exercised with these pins; the complete pytest suite was executed on Windows. Other Python versions and PostgreSQL remain unverified.
 
 ## Tests and release gates
 
@@ -21,7 +21,7 @@ npm.cmd --prefix frontend ls --all
 
 Run commands individually and stop on any nonzero exit; PowerShell does not automatically stop on native command failures. The complete **398-test suite** remains represented. The release checker fails on missing public documentation, dependency mismatch, changed fingerprints, unclassified API routes, unsafe configuration, isolation/read-only failures or nonreproducible seed/restart behavior. Its gate logic is retained; only obsolete internal-report requirements were replaced by the public methodology/security/reproduction documents.
 
-The HTTP smoke starts fresh-seed, prepared-restart and ephemeral-reseed servers from allowlisted public files. It tests writes/default-deny, Host/Origin rejection, private cohort bounds, all three stateless previews, notice delivery and unchanged DB bytes. It never copies the operator's normal database. Check reports default to ignored `.run/`. A compact executed snapshot is retained in `evaluation/release_verification.json`; it is local evidence, not a provider certification.
+The HTTP smoke starts fresh-seed, prepared-restart and ephemeral-reseed servers from allowlisted public files. It tests writes/default-deny, Host/Origin rejection, private cohort bounds, all three stateless previews, notice delivery and unchanged DB bytes. It never copies the operator's normal database. Check reports default to ignored `.run/`. A compact executed snapshot, including separate external HTTPS checks, is retained in `evaluation/release_verification.json`. See `DEPLOYMENT_GUIDE.md` for the observed cloud scope and remaining limits; none of these checks is a provider certification.
 
 ## Scientific evidence
 

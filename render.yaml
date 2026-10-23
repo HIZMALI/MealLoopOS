@@ -1,4 +1,4 @@
-# Configuration only. No service has been created.
+# Read-only public demonstration. Keep Free compute and manual deploys.
 services:
   - type: web
     name: mealloop-os-demo

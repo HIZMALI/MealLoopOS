@@ -1,6 +1,6 @@
 # Running and deployment
 
-Windows local execution is verified with Python 3.14.0 and Node 24.13.1. Linux installation, Render execution, managed TLS/edge behavior and hosting quotas remain unverified. No Render resource or live hosted URL is claimed.
+The public demonstration is available at [mealloop-os-demo.onrender.com](https://mealloop-os-demo.onrender.com/#demo). Windows local execution and Render's native Linux build/runtime are verified with Python 3.14.0 and Node 24.13.1. The hosted service is read-only; LOCAL remains a private workstation mode.
 
 ## Local development
 
@@ -31,7 +31,7 @@ For a compiled LOCAL application, set `MEALLOOP_MODE=LOCAL` and run `python scri
 
 ## Render configuration
 
-`render.yaml` defines one native Python **free** web service, branch `main`, automatic deploys off, no disk/database, exact Python/Node versions and PUBLIC_DEMO only. It is configuration, not evidence of deployment. Creating a host is a separate action; repository publication does not create one.
+`render.yaml` defines one native Python **Free** web service, branch `main`, automatic deploys off, no permanent disk or separate database, exact Python/Node versions and PUBLIC_DEMO only. The authenticated Dashboard confirmed these settings on 23 October 2026. Blueprint automatic synchronization is also paused. No paid resource, upgrade or payment information was used.
 
 [Render's Blueprint reference](https://render.com/docs/blueprint-spec#self-referencing-environment-variables) documents mapping a service's default variable to another key. [Default variables](https://render.com/docs/environment-variables#render_external_hostname) define the assigned public hostname. The configuration uses:
 
@@ -43,7 +43,7 @@ For a compiled LOCAL application, set `MEALLOOP_MODE=LOCAL` and run `python scri
     envVarKey: RENDER_EXTERNAL_HOSTNAME
 ```
 
-Keep the reference name equal to the service name. This uses the assigned public hostname, not private-network `property: host`. Do not invent a hostname, allow wildcards, trust request headers for configuration or disable validation. Blueprint references refresh on sync. Their actual cloud resolution remains unverified here.
+Keep the reference name equal to the service name. This uses the assigned public hostname, not private-network `property: host`. Do not invent a hostname, allow wildcards, trust request headers for configuration or disable validation. Blueprint references refresh on sync. The deployed value was inspected and equals `mealloop-os-demo.onrender.com`.
 
 Build command:
 
@@ -53,7 +53,7 @@ python -m pip install -r backend/requirements-lock.txt && npm --prefix frontend 
 
 Start command: `python scripts/serve.py`. Health check: `/api/health`. Runtime pins use [Python version selection](https://render.com/docs/python-version) and [Node version selection](https://render.com/docs/node-version); binding follows [FastAPI deployment guidance](https://render.com/docs/deploy-fastapi).
 
-For a later authorized Blueprint deployment: connect the actual public repository, select `main` and root `render.yaml`; review exactly one Free web service and no database/disk before creating it. Never import private environment groups, `.env` or backups. Abort on a paid upgrade or payment requirement. Check exact runtime versions, installed locks, all release gates, assigned hostname, TLS/health, all four tools, blocked writes and restart/idle wake behavior. Do not weaken security to make health pass.
+To reproduce the Blueprint deployment: connect the public repository, select `main` and root `render.yaml`; review exactly one Free web service and no database/disk before creating it. Never import private environment groups, `.env` or backups. Abort on a paid upgrade or payment requirement. Check exact runtime versions, installed locks, all release gates, assigned hostname, TLS/health, all four tools, blocked writes and restart/idle wake behavior. Do not weaken security to make health pass.
 
 Manual Dashboard fallback: New Web Service, repository root, Python 3 runtime, Free instance, auto-deploy Off, health `/api/health`, the same Build command; set `PYTHON_VERSION=3.14.0`, `NODE_VERSION=24.13.1`, `MEALLOOP_MODE=PUBLIC_DEMO`, `OMP_NUM_THREADS=1`, `OPENBLAS_NUM_THREADS=1`. Without a Blueprint reference, the POSIX Start command can use the server-provided hostname:
 
@@ -61,12 +61,20 @@ Manual Dashboard fallback: New Web Service, repository root, Python 3 runtime, F
 test -n "$RENDER_EXTERNAL_HOSTNAME" && MEALLOOP_PUBLIC_HOSTS="$RENDER_EXTERNAL_HOSTNAME" python scripts/serve.py
 ```
 
-Alternatively copy the actual assigned hostname into `MEALLOOP_PUBLIC_HOSTS` and use the ordinary Start command. An environment value containing a literal `$RENDER_EXTERNAL_HOSTNAME` is not shell interpolation. No Linux/Render shell command above was executed in this release.
+Alternatively copy the actual assigned hostname into `MEALLOOP_PUBLIC_HOSTS` and use the ordinary Start command. An environment value containing a literal `$RENDER_EXTERNAL_HOSTNAME` is not shell interpolation. The Blueprint Build and Start commands were executed on Render; the manual fallback above was not exercised.
 
 [Free-service documentation](https://render.com/docs/free) describes idle sleep, wake latency, ephemeral storage and quotas. Reseeding avoids durable demo storage, but does not guarantee availability. Recheck current terms/account requirements before deploying. Opening the demo before a presentation is a preparation step, not an uptime guarantee.
 
-## Verification and remaining gates
+## Executed cloud verification and remaining limits
 
 Run `scripts/release_check.py`, `scripts/smoke_release.py` and the commands in `REPRODUCIBILITY.md`. Critical gate failure means NOT READY. HTTP smoke records three actual local production processes: fresh seed, prepared restart and fresh reseed. Windows startup/memory samples are not Linux container, Render cold-start or sustained-load measurements.
 
-Before claiming a deployed release, execute Linux dependency installation and binary-notice review, provider configuration validation, exact edge Host/Origin/TLS checks, free quota/account checks, resource/concurrency measurements and remote cold-start/restart tests. No provider validator, cloud deployment, external penetration/load test or security certification is claimed.
+On 23 October 2026, the native Linux build installed the exact Python lock, ran `npm ci` (zero reported vulnerabilities), compiled the production frontend, prepared the isolated demo and passed every `release_check.py` gate. Logs confirmed successful application startup and the assigned HTTPS URL. The first bootstrap attempt failed closed while `MEALLOOP_PUBLIC_HOSTS` was unavailable; a second deployment of the same application commit succeeded after the Blueprint reference resolved. No Host protection was relaxed.
+
+External HTTPS checks used ordinary certificate validation. Health returned 200, configuration reported PUBLIC_DEMO/read-only, the official workbook hash and 155 days matched, and the forecast evaluation matched the frozen JSON. Desktop and 390px browser checks opened all four modules without critical console errors. Live previews reproduced 440 portions at 95%, 400 at 70% with 12 expected unserved portions, and the separate synthetic 8 kg estimate, 7.6 kg surplus reading and 9.7 kg disjoint total. No synthetic example is an operational pilot.
+
+Eight write-route probes, private/debug/file paths, unknown API routes and private-cohort requests were denied. Same-origin previews succeeded, foreign Origin was rejected, and saved examples were unchanged after previews. An invalid Host received 403 at the public endpoint; this may be Render's edge rejection, while direct application Host rejection is covered locally. No database override, secret files or linked private environment group was configured.
+
+The Dashboard accepted a service restart and the external checks passed again afterward. Fresh seed, prepared restart and explicit ephemeral reseed were also exercised in three local production processes. Cloud idle wake and deliberate loss of the generated cloud state remain unverified. The Dashboard shows a 512 MB memory limit and 0.15 CPU; actual memory/CPU charts require paid compute, so no cloud memory measurement is claimed. Windows RSS samples do not substitute for one.
+
+Free-plan limits and availability can change; observed deployment does not guarantee future quota capacity or uptime. Optional Linux binary notices have not received the same filesystem-level inspection as the retained Windows dependency inventory. No external penetration/load test, cloud shell inspection, formal accessibility certification or security certification is claimed. Full executed check details and preserved scientific hashes are in `evaluation/release_verification.json`.

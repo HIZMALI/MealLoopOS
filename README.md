@@ -4,6 +4,8 @@
 
 School kitchens need to prevent surplus without hiding unmet demand. MealLoop OS connects historical waste measurements, evaluated forecasts, explicit planning assumptions and operational accounting. Each stage shows what its evidence can support. No real kitchen pilot or causal waste reduction has been established.
 
+[Try the public demo](https://mealloop-os-demo.onrender.com/#demo). The read-only Render Free service may take time to wake after inactivity. Use fictional inputs; previews are not saved.
+
 ![MealLoop OS guided demonstration](docs/screenshots/demo.png)
 
 ## Four working modules
@@ -19,7 +21,7 @@ React, TypeScript, Vite, Tailwind and Recharts provide the interface. FastAPI se
 
 ## Install and run locally
 
-Verified environment: **Windows, Python 3.14.0, Node 24.13.1, npm and Git**. Use the exact Python lock for prepared-model compatibility. Linux/cloud execution and other Python versions remain unverified.
+Verified local environment: **Windows, Python 3.14.0, Node 24.13.1, npm and Git**. The same pinned release also builds and runs on Render's native Linux service. Use the exact Python lock for prepared-model compatibility. Other Python versions remain unverified.
 
 ```powershell
 git clone https://github.com/HIZMALI/MealLoopOS.git
@@ -55,7 +57,7 @@ Remove-Item Env:MEALLOOP_DATABASE_URL -ErrorAction SilentlyContinue
 .\.venv\Scripts\python.exe scripts\serve.py
 ```
 
-Open [the isolated demonstration](http://127.0.0.1:18085/#demo). Use fictional inputs. Missing demo state is recreated after ephemeral loss; modified or partial state fails closed. `render.yaml` retains a free-service configuration, strict exact Host validation and PUBLIC_DEMO. No hosted URL or completed Render deployment is claimed. [Security boundaries](docs/PUBLIC_DEMO_SECURITY.md) · [Deployment instructions and unverified cloud gates](docs/DEPLOYMENT_GUIDE.md).
+Open [the local isolated demonstration](http://127.0.0.1:18085/#demo) or [the hosted demo](https://mealloop-os-demo.onrender.com/#demo). Use fictional inputs. Missing demo state is recreated after ephemeral loss; modified or partial state fails closed. The deployed `render.yaml` uses PUBLIC_DEMO, strict exact Host validation, one Free web service, manual deploys and no permanent disk or separate database. [Security boundaries](docs/PUBLIC_DEMO_SECURITY.md) · [Deployment verification and limits](docs/DEPLOYMENT_GUIDE.md).
 
 ## Data and scientific limits
 
