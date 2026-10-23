@@ -1,0 +1,135 @@
+{
+  "sheet": "food waste school meals 2024-25",
+  "sheets": [
+    "food waste school meals 2024-25"
+  ],
+  "headers": [
+    "DATE",
+    "MENU",
+    "KSW kg",
+    "PW kg",
+    "PW g",
+    "DINERS",
+    "PW/g/diner",
+    "KSW/g/diner"
+  ],
+  "header_mapping": {
+    "DATE": "date",
+    "MENU": "menu",
+    "KSW kg": "kitchen_serving_waste_kg",
+    "PW kg": "plate_waste_kg",
+    "PW g": "reported_plate_waste_g",
+    "DINERS": "diners",
+    "PW/g/diner": "reported_plate_g_per_diner",
+    "KSW/g/diner": "reported_kitchen_g_per_diner"
+  },
+  "ignored_columns": [],
+  "issue_counts": {
+    "missing_kitchen_serving_waste_kg": 1,
+    "plate_per_diner_conflict": 2,
+    "kitchen_per_diner_conflict": 1,
+    "plate_kg_g_conflict": 1
+  },
+  "flagged_rows": 3,
+  "date_count": 155,
+  "date_ordered": true,
+  "order": "source row order",
+  "missing_counts": {
+    "date": 0,
+    "menu": 0,
+    "diners": 0,
+    "plate_waste_kg": 0,
+    "kitchen_serving_waste_kg": 1,
+    "reported_plate_waste_g": 0,
+    "reported_plate_g_per_diner": 0,
+    "reported_kitchen_g_per_diner": 1
+  },
+  "date_start": "2024-08-08",
+  "date_end": "2025-04-11",
+  "file_sha256": "2ffad746b7ed5d536a0c99c37d8e249230d95d5fb2d041d85d01b69499f99624",
+  "file_md5": "3f7e610fedc1810f7e8bc1bd47103ee7",
+  "physical_dimensions": {
+    "rows": 743,
+    "columns": 16
+  },
+  "column_formats": {
+    "DATE": {
+      "dd/mm/yyyy": 155
+    },
+    "MENU": {
+      "General": 155
+    },
+    "KSW kg": {
+      "0.00": 155
+    },
+    "PW kg": {
+      "General": 155
+    },
+    "PW g": {
+      "General": 154,
+      "0": 1
+    },
+    "DINERS": {
+      "General": 155
+    },
+    "PW/g/diner": {
+      "0.000": 155
+    },
+    "KSW/g/diner": {
+      "0.000": 155
+    }
+  },
+  "flagged_records": [
+    {
+      "menu": 21,
+      "diners": 419,
+      "plate_waste_kg": 9.116,
+      "kitchen_serving_waste_kg": null,
+      "reported_plate_waste_g": 9116.0,
+      "reported_plate_g_per_diner": 21.75656324582339,
+      "reported_kitchen_g_per_diner": null,
+      "date": "2024-09-02",
+      "day_index": 18,
+      "source_row": 19,
+      "issues": [
+        "missing_kitchen_serving_waste_kg"
+      ],
+      "phase": "baseline"
+    },
+    {
+      "menu": 11,
+      "diners": 340,
+      "plate_waste_kg": 11.633,
+      "kitchen_serving_waste_kg": 2.41,
+      "reported_plate_waste_g": 11633.0,
+      "reported_plate_g_per_diner": 8.250034655376933,
+      "reported_kitchen_g_per_diner": 21.76836286273844,
+      "date": "2025-03-17",
+      "day_index": 136,
+      "source_row": 137,
+      "issues": [
+        "plate_per_diner_conflict",
+        "kitchen_per_diner_conflict"
+      ],
+      "phase": "intervention"
+    },
+    {
+      "menu": 1,
+      "diners": 277,
+      "plate_waste_kg": 6.51,
+      "kitchen_serving_waste_kg": 4.19,
+      "reported_plate_waste_g": 6751.0,
+      "reported_plate_g_per_diner": 24.37184115523466,
+      "reported_kitchen_g_per_diner": 15.126353790613718,
+      "date": "2025-04-07",
+      "day_index": 151,
+      "source_row": 152,
+      "issues": [
+        "plate_kg_g_conflict",
+        "plate_per_diner_conflict"
+      ],
+      "phase": "intervention"
+    }
+  ],
+  "record_count": 155
+}

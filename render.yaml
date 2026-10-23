@@ -1,0 +1,27 @@
+# Configuration only. No service has been created.
+services:
+  - type: web
+    name: mealloop-os-demo
+    runtime: python
+    plan: free
+    branch: main
+    autoDeployTrigger: "off"
+    buildCommand: python -m pip install -r backend/requirements-lock.txt && npm --prefix frontend ci && npm --prefix frontend run build && python scripts/prepare_public_demo.py && python scripts/release_check.py
+    startCommand: python scripts/serve.py
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.14.0
+      - key: NODE_VERSION
+        value: 24.13.1
+      - key: MEALLOOP_MODE
+        value: PUBLIC_DEMO
+      - key: MEALLOOP_PUBLIC_HOSTS
+        fromService:
+          name: mealloop-os-demo
+          type: web
+          envVarKey: RENDER_EXTERNAL_HOSTNAME
+      - key: OMP_NUM_THREADS
+        value: "1"
+      - key: OPENBLAS_NUM_THREADS
+        value: "1"

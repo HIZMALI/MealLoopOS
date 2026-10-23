@@ -1,0 +1,1155 @@
+{
+  "audit_history": [
+    {
+      "assessment": {
+        "accounting": {
+          "discrepancy_portions": 0,
+          "estimate_label": "Portion-count conversion estimate; not a scale reading. Never added to physical measurements.",
+          "estimated_discarded_kg": 8.0,
+          "known_disposition_portions": 40,
+          "missing_dispositions": [],
+          "reconciled": true,
+          "remaining_portions": 40,
+          "unknown_portions": 0
+        },
+        "actual_minus_baseline": -40,
+        "actual_minus_recommended": 0,
+        "assessment_version": "impact04-v1",
+        "can_finalize": true,
+        "combined_mass_explanation": "Sum of three operator-declared disjoint, compatible weighed streams. Self-reported scopes; synthetic readings remain synthetic.",
+        "combined_weighed_kg": 9.7,
+        "entry_complete": true,
+        "finalization_blockers": [],
+        "followed_exactly": true,
+        "independently_verified": false,
+        "issues": [],
+        "labels": [
+          "Synthetic demonstration",
+          "Retrospective observation"
+        ],
+        "limitations": [
+          "A complete entry is not independent verification or causal evidence of a software effect.",
+          "Served portions do not reveal unconstrained demand. Unknown turn-aways remain missing.",
+          "Rescued, retained and repurposed portions are separate from discarded-food measurements. Their eventual consumption or safe handling is not certified.",
+          "Portion-to-mass conversions are estimates; never add them to physical readings of the same food.",
+          "Planning assumptions and baseline quantities are not counterfactual observations or achieved waste prevention.",
+          "Scope/method declarations and document references are supplied by the operator, not independently checked.",
+          "Local append-only history is not cryptographically tamper-proof. Authentication is required before public deployment."
+        ],
+        "measurement_categories_present": [
+          "discarded_surplus",
+          "plate_waste",
+          "preparation_waste"
+        ],
+        "missing_measurement_categories": [],
+        "physically_weighed_categories": [
+          "discarded_surplus",
+          "plate_waste",
+          "preparation_waste"
+        ],
+        "planning_timing": "retrospective",
+        "planning_timing_explanation": "Server timestamp does not prove this plan existed before service. Same-day/backfilled plans are retrospective; a user cannot supply the capture timestamp.",
+        "provenance_label": "Synthetic demonstration"
+      },
+      "changed_fields": [
+        "count_method",
+        "decision_plan_id",
+        "disjoint_scope_note",
+        "dispositions",
+        "documents",
+        "measurements",
+        "menu",
+        "observed_diners",
+        "operator_notes",
+        "portion_mass_g",
+        "prepared",
+        "served",
+        "service_date",
+        "site",
+        "source_category",
+        "turn_aways"
+      ],
+      "correction_reason": null,
+      "created_at": "2026-10-23T12:00:00Z",
+      "event": "created",
+      "id": 1,
+      "plan_reference": {
+        "baseline_portions": 480,
+        "created_at": "2026-10-23T12:00:00Z",
+        "engine_version": "decision03-v1",
+        "evidence_type": "assumption_based",
+        "id": 1,
+        "input_fingerprint": "b6831a6945e90bd2dfde068af64079207ddfe73012a2636974aa13253274e151",
+        "menu": 1,
+        "modeled_baseline_surplus_kg": 30.4,
+        "modeled_recommended_surplus_kg": 14.4,
+        "modeled_surplus_difference_kg": 16.0,
+        "planning_date": "2026-10-22",
+        "recommended_portions": 440,
+        "scenario_kind": "synthetic_demo"
+      },
+      "previous_revision_id": null,
+      "record": {
+        "count_method": "Synthetic counts for acceptance testing",
+        "decision_plan_id": 1,
+        "disjoint_scope_note": "Simulated separate collection: unserved discarded food; plate returns; preparation scraps. No transfers, containers or duplicated material across streams.",
+        "dispositions": {
+          "discarded": 20,
+          "donated": 10,
+          "repurposed": 0,
+          "retained": 10,
+          "unknown": 0
+        },
+        "documents": [],
+        "measurements": [
+          {
+            "basis": "weighed",
+            "category": "discarded_surplus",
+            "destination": "compost",
+            "gross_kg": null,
+            "mass_kg": 7.6,
+            "material_type": "food_and_inedible",
+            "method": "Simulated scale protocol",
+            "notes": "Simulated scale reading; not a physical measurement.",
+            "scope_description": "Only unserved discarded prepared food; excludes plate returns and preparation scraps",
+            "scope_status": "disjoint_stream",
+            "tare_kg": null
+          },
+          {
+            "basis": "weighed",
+            "category": "plate_waste",
+            "destination": "compost",
+            "gross_kg": null,
+            "mass_kg": 1.2,
+            "material_type": "food_and_inedible",
+            "method": "Simulated scale protocol",
+            "notes": "Simulated scale reading; not a physical measurement.",
+            "scope_description": "Only plate returns; excludes unserved food and preparation scraps",
+            "scope_status": "disjoint_stream",
+            "tare_kg": null
+          },
+          {
+            "basis": "weighed",
+            "category": "preparation_waste",
+            "destination": "compost",
+            "gross_kg": null,
+            "mass_kg": 0.9,
+            "material_type": "food_and_inedible",
+            "method": "Simulated scale protocol",
+            "notes": "Simulated scale reading; not a physical measurement.",
+            "scope_description": "Only preparation scraps; excludes unserved food and plate returns",
+            "scope_status": "disjoint_stream",
+            "tare_kg": null
+          }
+        ],
+        "menu": "1",
+        "observed_diners": 400,
+        "operator_notes": "Explicitly synthetic. No actual service or physical weighing took place.",
+        "portion_mass_g": 400.0,
+        "prepared": 440,
+        "served": 400,
+        "service_date": "2026-10-22",
+        "site": "Synthetic demo kitchen",
+        "source_category": "synthetic",
+        "turn_aways": 0
+      },
+      "revision_id": 1,
+      "service_created_at": "2026-10-23T12:00:00Z",
+      "status": "draft",
+      "version": 1
+    },
+    {
+      "assessment": {
+        "accounting": {
+          "discrepancy_portions": 0,
+          "estimate_label": "Portion-count conversion estimate; not a scale reading. Never added to physical measurements.",
+          "estimated_discarded_kg": 8.0,
+          "known_disposition_portions": 40,
+          "missing_dispositions": [],
+          "reconciled": true,
+          "remaining_portions": 40,
+          "unknown_portions": 0
+        },
+        "actual_minus_baseline": -40,
+        "actual_minus_recommended": 0,
+        "assessment_version": "impact04-v1",
+        "can_finalize": true,
+        "combined_mass_explanation": "Sum of three operator-declared disjoint, compatible weighed streams. Self-reported scopes; synthetic readings remain synthetic.",
+        "combined_weighed_kg": 9.7,
+        "entry_complete": true,
+        "finalization_blockers": [],
+        "followed_exactly": true,
+        "independently_verified": false,
+        "issues": [],
+        "labels": [
+          "Synthetic demonstration",
+          "Retrospective observation"
+        ],
+        "limitations": [
+          "A complete entry is not independent verification or causal evidence of a software effect.",
+          "Served portions do not reveal unconstrained demand. Unknown turn-aways remain missing.",
+          "Rescued, retained and repurposed portions are separate from discarded-food measurements. Their eventual consumption or safe handling is not certified.",
+          "Portion-to-mass conversions are estimates; never add them to physical readings of the same food.",
+          "Planning assumptions and baseline quantities are not counterfactual observations or achieved waste prevention.",
+          "Scope/method declarations and document references are supplied by the operator, not independently checked.",
+          "Local append-only history is not cryptographically tamper-proof. Authentication is required before public deployment."
+        ],
+        "measurement_categories_present": [
+          "discarded_surplus",
+          "plate_waste",
+          "preparation_waste"
+        ],
+        "missing_measurement_categories": [],
+        "physically_weighed_categories": [
+          "discarded_surplus",
+          "plate_waste",
+          "preparation_waste"
+        ],
+        "planning_timing": "retrospective",
+        "planning_timing_explanation": "Server timestamp does not prove this plan existed before service. Same-day/backfilled plans are retrospective; a user cannot supply the capture timestamp.",
+        "provenance_label": "Synthetic demonstration"
+      },
+      "changed_fields": [],
+      "correction_reason": null,
+      "created_at": "2026-10-23T12:00:00Z",
+      "event": "finalized",
+      "id": 1,
+      "plan_reference": {
+        "baseline_portions": 480,
+        "created_at": "2026-10-23T12:00:00Z",
+        "engine_version": "decision03-v1",
+        "evidence_type": "assumption_based",
+        "id": 1,
+        "input_fingerprint": "b6831a6945e90bd2dfde068af64079207ddfe73012a2636974aa13253274e151",
+        "menu": 1,
+        "modeled_baseline_surplus_kg": 30.4,
+        "modeled_recommended_surplus_kg": 14.4,
+        "modeled_surplus_difference_kg": 16.0,
+        "planning_date": "2026-10-22",
+        "recommended_portions": 440,
+        "scenario_kind": "synthetic_demo"
+      },
+      "previous_revision_id": 1,
+      "record": {
+        "count_method": "Synthetic counts for acceptance testing",
+        "decision_plan_id": 1,
+        "disjoint_scope_note": "Simulated separate collection: unserved discarded food; plate returns; preparation scraps. No transfers, containers or duplicated material across streams.",
+        "dispositions": {
+          "discarded": 20,
+          "donated": 10,
+          "repurposed": 0,
+          "retained": 10,
+          "unknown": 0
+        },
+        "documents": [],
+        "measurements": [
+          {
+            "basis": "weighed",
+            "category": "discarded_surplus",
+            "destination": "compost",
+            "gross_kg": null,
+            "mass_kg": 7.6,
+            "material_type": "food_and_inedible",
+            "method": "Simulated scale protocol",
+            "notes": "Simulated scale reading; not a physical measurement.",
+            "scope_description": "Only unserved discarded prepared food; excludes plate returns and preparation scraps",
+            "scope_status": "disjoint_stream",
+            "tare_kg": null
+          },
+          {
+            "basis": "weighed",
+            "category": "plate_waste",
+            "destination": "compost",
+            "gross_kg": null,
+            "mass_kg": 1.2,
+            "material_type": "food_and_inedible",
+            "method": "Simulated scale protocol",
+            "notes": "Simulated scale reading; not a physical measurement.",
+            "scope_description": "Only plate returns; excludes unserved food and preparation scraps",
+            "scope_status": "disjoint_stream",
+            "tare_kg": null
+          },
+          {
+            "basis": "weighed",
+            "category": "preparation_waste",
+            "destination": "compost",
+            "gross_kg": null,
+            "mass_kg": 0.9,
+            "material_type": "food_and_inedible",
+            "method": "Simulated scale protocol",
+            "notes": "Simulated scale reading; not a physical measurement.",
+            "scope_description": "Only preparation scraps; excludes unserved food and plate returns",
+            "scope_status": "disjoint_stream",
+            "tare_kg": null
+          }
+        ],
+        "menu": "1",
+        "observed_diners": 400,
+        "operator_notes": "Explicitly synthetic. No actual service or physical weighing took place.",
+        "portion_mass_g": 400.0,
+        "prepared": 440,
+        "served": 400,
+        "service_date": "2026-10-22",
+        "site": "Synthetic demo kitchen",
+        "source_category": "synthetic",
+        "turn_aways": 0
+      },
+      "revision_id": 2,
+      "service_created_at": "2026-10-23T12:00:00Z",
+      "status": "finalized",
+      "version": 2
+    },
+    {
+      "assessment": {
+        "accounting": {
+          "discrepancy_portions": 0,
+          "estimate_label": "Portion-count conversion estimate; not a scale reading. Never added to physical measurements.",
+          "estimated_discarded_kg": 8.0,
+          "known_disposition_portions": 40,
+          "missing_dispositions": [],
+          "reconciled": true,
+          "remaining_portions": 40,
+          "unknown_portions": 0
+        },
+        "actual_minus_baseline": -40,
+        "actual_minus_recommended": 0,
+        "assessment_version": "impact04-v1",
+        "can_finalize": true,
+        "combined_mass_explanation": "Sum of three operator-declared disjoint, compatible weighed streams. Self-reported scopes; synthetic readings remain synthetic.",
+        "combined_weighed_kg": 9.7,
+        "entry_complete": true,
+        "finalization_blockers": [],
+        "followed_exactly": true,
+        "independently_verified": false,
+        "issues": [],
+        "labels": [
+          "Synthetic demonstration",
+          "Retrospective observation"
+        ],
+        "limitations": [
+          "A complete entry is not independent verification or causal evidence of a software effect.",
+          "Served portions do not reveal unconstrained demand. Unknown turn-aways remain missing.",
+          "Rescued, retained and repurposed portions are separate from discarded-food measurements. Their eventual consumption or safe handling is not certified.",
+          "Portion-to-mass conversions are estimates; never add them to physical readings of the same food.",
+          "Planning assumptions and baseline quantities are not counterfactual observations or achieved waste prevention.",
+          "Scope/method declarations and document references are supplied by the operator, not independently checked.",
+          "Local append-only history is not cryptographically tamper-proof. Authentication is required before public deployment."
+        ],
+        "measurement_categories_present": [
+          "discarded_surplus",
+          "plate_waste",
+          "preparation_waste"
+        ],
+        "missing_measurement_categories": [],
+        "physically_weighed_categories": [
+          "discarded_surplus",
+          "plate_waste",
+          "preparation_waste"
+        ],
+        "planning_timing": "retrospective",
+        "planning_timing_explanation": "Server timestamp does not prove this plan existed before service. Same-day/backfilled plans are retrospective; a user cannot supply the capture timestamp.",
+        "provenance_label": "Synthetic demonstration"
+      },
+      "changed_fields": [
+        "operator_notes"
+      ],
+      "correction_reason": "Clarify simulated measurement provenance.",
+      "created_at": "2026-10-23T12:00:00Z",
+      "event": "corrected",
+      "id": 1,
+      "plan_reference": {
+        "baseline_portions": 480,
+        "created_at": "2026-10-23T12:00:00Z",
+        "engine_version": "decision03-v1",
+        "evidence_type": "assumption_based",
+        "id": 1,
+        "input_fingerprint": "b6831a6945e90bd2dfde068af64079207ddfe73012a2636974aa13253274e151",
+        "menu": 1,
+        "modeled_baseline_surplus_kg": 30.4,
+        "modeled_recommended_surplus_kg": 14.4,
+        "modeled_surplus_difference_kg": 16.0,
+        "planning_date": "2026-10-22",
+        "recommended_portions": 440,
+        "scenario_kind": "synthetic_demo"
+      },
+      "previous_revision_id": 2,
+      "record": {
+        "count_method": "Synthetic counts for acceptance testing",
+        "decision_plan_id": 1,
+        "disjoint_scope_note": "Simulated separate collection: unserved discarded food; plate returns; preparation scraps. No transfers, containers or duplicated material across streams.",
+        "dispositions": {
+          "discarded": 20,
+          "donated": 10,
+          "repurposed": 0,
+          "retained": 10,
+          "unknown": 0
+        },
+        "documents": [],
+        "measurements": [
+          {
+            "basis": "weighed",
+            "category": "discarded_surplus",
+            "destination": "compost",
+            "gross_kg": null,
+            "mass_kg": 7.6,
+            "material_type": "food_and_inedible",
+            "method": "Simulated scale protocol",
+            "notes": "Simulated scale reading; not a physical measurement.",
+            "scope_description": "Only unserved discarded prepared food; excludes plate returns and preparation scraps",
+            "scope_status": "disjoint_stream",
+            "tare_kg": null
+          },
+          {
+            "basis": "weighed",
+            "category": "plate_waste",
+            "destination": "compost",
+            "gross_kg": null,
+            "mass_kg": 1.2,
+            "material_type": "food_and_inedible",
+            "method": "Simulated scale protocol",
+            "notes": "Simulated scale reading; not a physical measurement.",
+            "scope_description": "Only plate returns; excludes unserved food and preparation scraps",
+            "scope_status": "disjoint_stream",
+            "tare_kg": null
+          },
+          {
+            "basis": "weighed",
+            "category": "preparation_waste",
+            "destination": "compost",
+            "gross_kg": null,
+            "mass_kg": 0.9,
+            "material_type": "food_and_inedible",
+            "method": "Simulated scale protocol",
+            "notes": "Simulated scale reading; not a physical measurement.",
+            "scope_description": "Only preparation scraps; excludes unserved food and plate returns",
+            "scope_status": "disjoint_stream",
+            "tare_kg": null
+          }
+        ],
+        "menu": "1",
+        "observed_diners": 400,
+        "operator_notes": "Synthetic audit correction: clarified that no physical weighing occurred.",
+        "portion_mass_g": 400.0,
+        "prepared": 440,
+        "served": 400,
+        "service_date": "2026-10-22",
+        "site": "Synthetic demo kitchen",
+        "source_category": "synthetic",
+        "turn_aways": 0
+      },
+      "revision_id": 4,
+      "service_created_at": "2026-10-23T12:00:00Z",
+      "status": "draft",
+      "version": 3
+    },
+    {
+      "assessment": {
+        "accounting": {
+          "discrepancy_portions": 0,
+          "estimate_label": "Portion-count conversion estimate; not a scale reading. Never added to physical measurements.",
+          "estimated_discarded_kg": 8.0,
+          "known_disposition_portions": 40,
+          "missing_dispositions": [],
+          "reconciled": true,
+          "remaining_portions": 40,
+          "unknown_portions": 0
+        },
+        "actual_minus_baseline": -40,
+        "actual_minus_recommended": 0,
+        "assessment_version": "impact04-v1",
+        "can_finalize": true,
+        "combined_mass_explanation": "Sum of three operator-declared disjoint, compatible weighed streams. Self-reported scopes; synthetic readings remain synthetic.",
+        "combined_weighed_kg": 9.7,
+        "entry_complete": true,
+        "finalization_blockers": [],
+        "followed_exactly": true,
+        "independently_verified": false,
+        "issues": [],
+        "labels": [
+          "Synthetic demonstration",
+          "Retrospective observation"
+        ],
+        "limitations": [
+          "A complete entry is not independent verification or causal evidence of a software effect.",
+          "Served portions do not reveal unconstrained demand. Unknown turn-aways remain missing.",
+          "Rescued, retained and repurposed portions are separate from discarded-food measurements. Their eventual consumption or safe handling is not certified.",
+          "Portion-to-mass conversions are estimates; never add them to physical readings of the same food.",
+          "Planning assumptions and baseline quantities are not counterfactual observations or achieved waste prevention.",
+          "Scope/method declarations and document references are supplied by the operator, not independently checked.",
+          "Local append-only history is not cryptographically tamper-proof. Authentication is required before public deployment."
+        ],
+        "measurement_categories_present": [
+          "discarded_surplus",
+          "plate_waste",
+          "preparation_waste"
+        ],
+        "missing_measurement_categories": [],
+        "physically_weighed_categories": [
+          "discarded_surplus",
+          "plate_waste",
+          "preparation_waste"
+        ],
+        "planning_timing": "retrospective",
+        "planning_timing_explanation": "Server timestamp does not prove this plan existed before service. Same-day/backfilled plans are retrospective; a user cannot supply the capture timestamp.",
+        "provenance_label": "Synthetic demonstration"
+      },
+      "changed_fields": [],
+      "correction_reason": null,
+      "created_at": "2026-10-23T12:00:00Z",
+      "event": "finalized",
+      "id": 1,
+      "plan_reference": {
+        "baseline_portions": 480,
+        "created_at": "2026-10-23T12:00:00Z",
+        "engine_version": "decision03-v1",
+        "evidence_type": "assumption_based",
+        "id": 1,
+        "input_fingerprint": "b6831a6945e90bd2dfde068af64079207ddfe73012a2636974aa13253274e151",
+        "menu": 1,
+        "modeled_baseline_surplus_kg": 30.4,
+        "modeled_recommended_surplus_kg": 14.4,
+        "modeled_surplus_difference_kg": 16.0,
+        "planning_date": "2026-10-22",
+        "recommended_portions": 440,
+        "scenario_kind": "synthetic_demo"
+      },
+      "previous_revision_id": 4,
+      "record": {
+        "count_method": "Synthetic counts for acceptance testing",
+        "decision_plan_id": 1,
+        "disjoint_scope_note": "Simulated separate collection: unserved discarded food; plate returns; preparation scraps. No transfers, containers or duplicated material across streams.",
+        "dispositions": {
+          "discarded": 20,
+          "donated": 10,
+          "repurposed": 0,
+          "retained": 10,
+          "unknown": 0
+        },
+        "documents": [],
+        "measurements": [
+          {
+            "basis": "weighed",
+            "category": "discarded_surplus",
+            "destination": "compost",
+            "gross_kg": null,
+            "mass_kg": 7.6,
+            "material_type": "food_and_inedible",
+            "method": "Simulated scale protocol",
+            "notes": "Simulated scale reading; not a physical measurement.",
+            "scope_description": "Only unserved discarded prepared food; excludes plate returns and preparation scraps",
+            "scope_status": "disjoint_stream",
+            "tare_kg": null
+          },
+          {
+            "basis": "weighed",
+            "category": "plate_waste",
+            "destination": "compost",
+            "gross_kg": null,
+            "mass_kg": 1.2,
+            "material_type": "food_and_inedible",
+            "method": "Simulated scale protocol",
+            "notes": "Simulated scale reading; not a physical measurement.",
+            "scope_description": "Only plate returns; excludes unserved food and preparation scraps",
+            "scope_status": "disjoint_stream",
+            "tare_kg": null
+          },
+          {
+            "basis": "weighed",
+            "category": "preparation_waste",
+            "destination": "compost",
+            "gross_kg": null,
+            "mass_kg": 0.9,
+            "material_type": "food_and_inedible",
+            "method": "Simulated scale protocol",
+            "notes": "Simulated scale reading; not a physical measurement.",
+            "scope_description": "Only preparation scraps; excludes unserved food and plate returns",
+            "scope_status": "disjoint_stream",
+            "tare_kg": null
+          }
+        ],
+        "menu": "1",
+        "observed_diners": 400,
+        "operator_notes": "Synthetic audit correction: clarified that no physical weighing occurred.",
+        "portion_mass_g": 400.0,
+        "prepared": 440,
+        "served": 400,
+        "service_date": "2026-10-22",
+        "site": "Synthetic demo kitchen",
+        "source_category": "synthetic",
+        "turn_aways": 0
+      },
+      "revision_id": 5,
+      "service_created_at": "2026-10-23T12:00:00Z",
+      "status": "finalized",
+      "version": 4
+    }
+  ],
+  "complete_record": {
+    "assessment": {
+      "accounting": {
+        "discrepancy_portions": 0,
+        "estimate_label": "Portion-count conversion estimate; not a scale reading. Never added to physical measurements.",
+        "estimated_discarded_kg": 8.0,
+        "known_disposition_portions": 40,
+        "missing_dispositions": [],
+        "reconciled": true,
+        "remaining_portions": 40,
+        "unknown_portions": 0
+      },
+      "actual_minus_baseline": -40,
+      "actual_minus_recommended": 0,
+      "assessment_version": "impact04-v1",
+      "can_finalize": true,
+      "combined_mass_explanation": "Sum of three operator-declared disjoint, compatible weighed streams. Self-reported scopes; synthetic readings remain synthetic.",
+      "combined_weighed_kg": 9.7,
+      "entry_complete": true,
+      "finalization_blockers": [],
+      "followed_exactly": true,
+      "independently_verified": false,
+      "issues": [],
+      "labels": [
+        "Synthetic demonstration",
+        "Retrospective observation"
+      ],
+      "limitations": [
+        "A complete entry is not independent verification or causal evidence of a software effect.",
+        "Served portions do not reveal unconstrained demand. Unknown turn-aways remain missing.",
+        "Rescued, retained and repurposed portions are separate from discarded-food measurements. Their eventual consumption or safe handling is not certified.",
+        "Portion-to-mass conversions are estimates; never add them to physical readings of the same food.",
+        "Planning assumptions and baseline quantities are not counterfactual observations or achieved waste prevention.",
+        "Scope/method declarations and document references are supplied by the operator, not independently checked.",
+        "Local append-only history is not cryptographically tamper-proof. Authentication is required before public deployment."
+      ],
+      "measurement_categories_present": [
+        "discarded_surplus",
+        "plate_waste",
+        "preparation_waste"
+      ],
+      "missing_measurement_categories": [],
+      "physically_weighed_categories": [
+        "discarded_surplus",
+        "plate_waste",
+        "preparation_waste"
+      ],
+      "planning_timing": "retrospective",
+      "planning_timing_explanation": "Server timestamp does not prove this plan existed before service. Same-day/backfilled plans are retrospective; a user cannot supply the capture timestamp.",
+      "provenance_label": "Synthetic demonstration"
+    },
+    "changed_fields": [],
+    "correction_reason": null,
+    "created_at": "2026-10-23T12:00:00Z",
+    "event": "finalized",
+    "id": 1,
+    "plan_reference": {
+      "baseline_portions": 480,
+      "created_at": "2026-10-23T12:00:00Z",
+      "engine_version": "decision03-v1",
+      "evidence_type": "assumption_based",
+      "id": 1,
+      "input_fingerprint": "b6831a6945e90bd2dfde068af64079207ddfe73012a2636974aa13253274e151",
+      "menu": 1,
+      "modeled_baseline_surplus_kg": 30.4,
+      "modeled_recommended_surplus_kg": 14.4,
+      "modeled_surplus_difference_kg": 16.0,
+      "planning_date": "2026-10-22",
+      "recommended_portions": 440,
+      "scenario_kind": "synthetic_demo"
+    },
+    "previous_revision_id": 1,
+    "record": {
+      "count_method": "Synthetic counts for acceptance testing",
+      "decision_plan_id": 1,
+      "disjoint_scope_note": "Simulated separate collection: unserved discarded food; plate returns; preparation scraps. No transfers, containers or duplicated material across streams.",
+      "dispositions": {
+        "discarded": 20,
+        "donated": 10,
+        "repurposed": 0,
+        "retained": 10,
+        "unknown": 0
+      },
+      "documents": [],
+      "measurements": [
+        {
+          "basis": "weighed",
+          "category": "discarded_surplus",
+          "destination": "compost",
+          "gross_kg": null,
+          "mass_kg": 7.6,
+          "material_type": "food_and_inedible",
+          "method": "Simulated scale protocol",
+          "notes": "Simulated scale reading; not a physical measurement.",
+          "scope_description": "Only unserved discarded prepared food; excludes plate returns and preparation scraps",
+          "scope_status": "disjoint_stream",
+          "tare_kg": null
+        },
+        {
+          "basis": "weighed",
+          "category": "plate_waste",
+          "destination": "compost",
+          "gross_kg": null,
+          "mass_kg": 1.2,
+          "material_type": "food_and_inedible",
+          "method": "Simulated scale protocol",
+          "notes": "Simulated scale reading; not a physical measurement.",
+          "scope_description": "Only plate returns; excludes unserved food and preparation scraps",
+          "scope_status": "disjoint_stream",
+          "tare_kg": null
+        },
+        {
+          "basis": "weighed",
+          "category": "preparation_waste",
+          "destination": "compost",
+          "gross_kg": null,
+          "mass_kg": 0.9,
+          "material_type": "food_and_inedible",
+          "method": "Simulated scale protocol",
+          "notes": "Simulated scale reading; not a physical measurement.",
+          "scope_description": "Only preparation scraps; excludes unserved food and plate returns",
+          "scope_status": "disjoint_stream",
+          "tare_kg": null
+        }
+      ],
+      "menu": "1",
+      "observed_diners": 400,
+      "operator_notes": "Explicitly synthetic. No actual service or physical weighing took place.",
+      "portion_mass_g": 400.0,
+      "prepared": 440,
+      "served": 400,
+      "service_date": "2026-10-22",
+      "site": "Synthetic demo kitchen",
+      "source_category": "synthetic",
+      "turn_aways": 0
+    },
+    "revision_id": 2,
+    "service_created_at": "2026-10-23T12:00:00Z",
+    "status": "finalized",
+    "version": 2
+  },
+  "evidence_type": "synthetic_demonstration",
+  "fixtures": {
+    "complete": {
+      "count_method": "Synthetic counts for acceptance testing",
+      "disjoint_scope_note": "Simulated separate collection: unserved discarded food; plate returns; preparation scraps. No transfers, containers or duplicated material across streams.",
+      "dispositions": {
+        "discarded": 20,
+        "donated": 10,
+        "repurposed": 0,
+        "retained": 10,
+        "unknown": 0
+      },
+      "documents": [],
+      "measurements": [
+        {
+          "basis": "weighed",
+          "category": "discarded_surplus",
+          "destination": "compost",
+          "mass_kg": 7.6,
+          "material_type": "food_and_inedible",
+          "method": "Simulated scale protocol",
+          "notes": "Simulated scale reading; not a physical measurement.",
+          "scope_description": "Only unserved discarded prepared food; excludes plate returns and preparation scraps",
+          "scope_status": "disjoint_stream"
+        },
+        {
+          "basis": "weighed",
+          "category": "plate_waste",
+          "destination": "compost",
+          "mass_kg": 1.2,
+          "material_type": "food_and_inedible",
+          "method": "Simulated scale protocol",
+          "notes": "Simulated scale reading; not a physical measurement.",
+          "scope_description": "Only plate returns; excludes unserved food and preparation scraps",
+          "scope_status": "disjoint_stream"
+        },
+        {
+          "basis": "weighed",
+          "category": "preparation_waste",
+          "destination": "compost",
+          "mass_kg": 0.9,
+          "material_type": "food_and_inedible",
+          "method": "Simulated scale protocol",
+          "notes": "Simulated scale reading; not a physical measurement.",
+          "scope_description": "Only preparation scraps; excludes unserved food and plate returns",
+          "scope_status": "disjoint_stream"
+        }
+      ],
+      "menu": "1",
+      "observed_diners": 400,
+      "operator_notes": "Explicitly synthetic. No actual service or physical weighing took place.",
+      "portion_mass_g": 400.0,
+      "prepared": 440,
+      "served": 400,
+      "service_date": "2026-10-22",
+      "site": "Synthetic demo kitchen",
+      "source_category": "synthetic",
+      "turn_aways": 0
+    },
+    "incomplete": {
+      "count_method": "Synthetic counts for acceptance testing",
+      "disjoint_scope_note": "",
+      "dispositions": {
+        "discarded": 5,
+        "donated": 10,
+        "repurposed": 0,
+        "retained": 10,
+        "unknown": 5
+      },
+      "documents": [],
+      "measurements": [],
+      "menu": "1",
+      "observed_diners": null,
+      "operator_notes": "Explicitly synthetic incomplete record; five portions have unknown disposition.",
+      "portion_mass_g": 400.0,
+      "prepared": 430,
+      "served": 400,
+      "service_date": "2026-10-22",
+      "site": "Synthetic demo kitchen",
+      "source_category": "synthetic",
+      "turn_aways": null
+    },
+    "notice": "SYNTHETIC DEMONSTRATION ONLY. No kitchen pilot occurred; scale readings and outcomes are simulated."
+  },
+  "incomplete_record": {
+    "assessment": {
+      "accounting": {
+        "discrepancy_portions": 0,
+        "estimate_label": "Portion-count conversion estimate; not a scale reading. Never added to physical measurements.",
+        "estimated_discarded_kg": 2.0,
+        "known_disposition_portions": 30,
+        "missing_dispositions": [],
+        "reconciled": true,
+        "remaining_portions": 30,
+        "unknown_portions": 5
+      },
+      "actual_minus_baseline": -50,
+      "actual_minus_recommended": -10,
+      "assessment_version": "impact04-v1",
+      "can_finalize": false,
+      "combined_mass_explanation": "No combined total: all three waste streams need entries; missing mass is not zero.",
+      "combined_weighed_kg": null,
+      "entry_complete": false,
+      "finalization_blockers": [
+        "5 portions have unknown disposition. Resolve this knowledge gap before finalizing."
+      ],
+      "followed_exactly": false,
+      "independently_verified": false,
+      "issues": [
+        "Missing mass categories: discarded_surplus, plate_waste, preparation_waste.",
+        "Turn-aways were not recorded; actual unmet demand is unknown.",
+        "No combined total: all three waste streams need entries; missing mass is not zero."
+      ],
+      "labels": [
+        "Synthetic demonstration",
+        "Retrospective observation",
+        "Incomplete record"
+      ],
+      "limitations": [
+        "A complete entry is not independent verification or causal evidence of a software effect.",
+        "Served portions do not reveal unconstrained demand. Unknown turn-aways remain missing.",
+        "Rescued, retained and repurposed portions are separate from discarded-food measurements. Their eventual consumption or safe handling is not certified.",
+        "Portion-to-mass conversions are estimates; never add them to physical readings of the same food.",
+        "Planning assumptions and baseline quantities are not counterfactual observations or achieved waste prevention.",
+        "Scope/method declarations and document references are supplied by the operator, not independently checked.",
+        "Local append-only history is not cryptographically tamper-proof. Authentication is required before public deployment."
+      ],
+      "measurement_categories_present": [],
+      "missing_measurement_categories": [
+        "discarded_surplus",
+        "plate_waste",
+        "preparation_waste"
+      ],
+      "physically_weighed_categories": [],
+      "planning_timing": "retrospective",
+      "planning_timing_explanation": "Server timestamp does not prove this plan existed before service. Same-day/backfilled plans are retrospective; a user cannot supply the capture timestamp.",
+      "provenance_label": "Synthetic demonstration"
+    },
+    "changed_fields": [
+      "count_method",
+      "decision_plan_id",
+      "disjoint_scope_note",
+      "dispositions",
+      "documents",
+      "measurements",
+      "menu",
+      "observed_diners",
+      "operator_notes",
+      "portion_mass_g",
+      "prepared",
+      "served",
+      "service_date",
+      "site",
+      "source_category",
+      "turn_aways"
+    ],
+    "correction_reason": null,
+    "created_at": "2026-10-23T12:00:00Z",
+    "event": "created",
+    "id": 2,
+    "plan_reference": {
+      "baseline_portions": 480,
+      "created_at": "2026-10-23T12:00:00Z",
+      "engine_version": "decision03-v1",
+      "evidence_type": "assumption_based",
+      "id": 1,
+      "input_fingerprint": "b6831a6945e90bd2dfde068af64079207ddfe73012a2636974aa13253274e151",
+      "menu": 1,
+      "modeled_baseline_surplus_kg": 30.4,
+      "modeled_recommended_surplus_kg": 14.4,
+      "modeled_surplus_difference_kg": 16.0,
+      "planning_date": "2026-10-22",
+      "recommended_portions": 440,
+      "scenario_kind": "synthetic_demo"
+    },
+    "previous_revision_id": null,
+    "record": {
+      "count_method": "Synthetic counts for acceptance testing",
+      "decision_plan_id": 1,
+      "disjoint_scope_note": "",
+      "dispositions": {
+        "discarded": 5,
+        "donated": 10,
+        "repurposed": 0,
+        "retained": 10,
+        "unknown": 5
+      },
+      "documents": [],
+      "measurements": [],
+      "menu": "1",
+      "observed_diners": null,
+      "operator_notes": "Explicitly synthetic incomplete record; five portions have unknown disposition.",
+      "portion_mass_g": 400.0,
+      "prepared": 430,
+      "served": 400,
+      "service_date": "2026-10-22",
+      "site": "Synthetic demo kitchen",
+      "source_category": "synthetic",
+      "turn_aways": null
+    },
+    "revision_id": 3,
+    "service_created_at": "2026-10-23T12:00:00Z",
+    "status": "draft",
+    "version": 1
+  },
+  "metadata": {
+    "assessment_version": "impact04-v1",
+    "dispositions": [
+      "donated",
+      "retained",
+      "repurposed",
+      "discarded",
+      "unknown"
+    ],
+    "limitations": [
+      "A complete entry is not independent verification or causal evidence of a software effect.",
+      "Served portions do not reveal unconstrained demand. Unknown turn-aways remain missing.",
+      "Rescued, retained and repurposed portions are separate from discarded-food measurements. Their eventual consumption or safe handling is not certified.",
+      "Portion-to-mass conversions are estimates; never add them to physical readings of the same food.",
+      "Planning assumptions and baseline quantities are not counterfactual observations or achieved waste prevention.",
+      "Scope/method declarations and document references are supplied by the operator, not independently checked.",
+      "Local append-only history is not cryptographically tamper-proof. Authentication is required before public deployment."
+    ],
+    "limits": {
+      "maximum_analytics_records": 5000,
+      "maximum_count": 100000,
+      "maximum_list_page": 100,
+      "maximum_mass_kg": 1000000,
+      "maximum_request_bytes": 65536
+    },
+    "mass_categories": [
+      "discarded_surplus",
+      "plate_waste",
+      "preparation_waste"
+    ],
+    "measurement_bases": [
+      "weighed",
+      "estimated",
+      "imported"
+    ],
+    "prospective_policy": "Server plan timestamp must predate the earliest possible start of the reported date (UTC+14); date matching required. No client capture timestamp is accepted.",
+    "source_categories": {
+      "synthetic": "Synthetic demonstration",
+      "user_reported": "User-reported observation \u2014 not independently verified",
+      "user_reported_documented": "User-reported with supporting references \u2014 not independently verified"
+    },
+    "standard_guidance": "https://flwprotocol.org/flw-standard/"
+  },
+  "notice": "No real kitchen service, pilot, physical weighing or food-waste intervention occurred. Test server clock is fixed solely for deterministic evidence.",
+  "summary": {
+    "adherence": {
+      "assessable_services": 2,
+      "followed_exactly": 1,
+      "linked_services": 2,
+      "prospective_captures": 0,
+      "retrospective_or_unlinked": 2
+    },
+    "basis_filter": null,
+    "combined_explanation": "Only complete, disjoint and compatible three-stream inventories are included; coverage shown. Estimates never added.",
+    "combined_weighed_kg": {
+      "covered": 1,
+      "missing": 1,
+      "total": 9.7
+    },
+    "counts": {
+      "discarded": {
+        "covered": 2,
+        "missing": 0,
+        "total": 25.0
+      },
+      "donated": {
+        "covered": 2,
+        "missing": 0,
+        "total": 20.0
+      },
+      "observed_diners": {
+        "covered": 1,
+        "missing": 1,
+        "total": 400.0
+      },
+      "prepared": {
+        "covered": 2,
+        "missing": 0,
+        "total": 870.0
+      },
+      "remaining": {
+        "covered": 2,
+        "missing": 0,
+        "total": 70.0
+      },
+      "repurposed": {
+        "covered": 2,
+        "missing": 0,
+        "total": 0.0
+      },
+      "retained": {
+        "covered": 2,
+        "missing": 0,
+        "total": 20.0
+      },
+      "served": {
+        "covered": 2,
+        "missing": 0,
+        "total": 800.0
+      },
+      "turn_aways": {
+        "covered": 1,
+        "missing": 1,
+        "total": 0.0
+      },
+      "unknown": {
+        "covered": 2,
+        "missing": 0,
+        "total": 5.0
+      }
+    },
+    "daily": [
+      {
+        "date": "2026-10-22",
+        "prepared": 870.0,
+        "remaining": 70.0,
+        "served": 800.0,
+        "services": 2
+      }
+    ],
+    "draft_services": 1,
+    "estimated_discarded_kg": {
+      "covered": 2,
+      "missing": 0,
+      "total": 10.0
+    },
+    "evidence": {
+      "complete_entries": 1,
+      "incomplete_entries": 1,
+      "independently_verified_services": 0,
+      "missing_disposition_services": 0,
+      "services_missing_mass": 1,
+      "unknown_disposition_services": 1,
+      "unreconciled_services": 0
+    },
+    "mass_by_category": {
+      "discarded_surplus": {
+        "estimated": {
+          "covered": 0,
+          "missing": 2,
+          "total": null
+        },
+        "imported": {
+          "covered": 0,
+          "missing": 2,
+          "total": null
+        },
+        "weighed": {
+          "covered": 1,
+          "missing": 1,
+          "total": 7.6
+        }
+      },
+      "plate_waste": {
+        "estimated": {
+          "covered": 0,
+          "missing": 2,
+          "total": null
+        },
+        "imported": {
+          "covered": 0,
+          "missing": 2,
+          "total": null
+        },
+        "weighed": {
+          "covered": 1,
+          "missing": 1,
+          "total": 1.2
+        }
+      },
+      "preparation_waste": {
+        "estimated": {
+          "covered": 0,
+          "missing": 2,
+          "total": null
+        },
+        "imported": {
+          "covered": 0,
+          "missing": 2,
+          "total": null
+        },
+        "weighed": {
+          "covered": 1,
+          "missing": 1,
+          "total": 0.9
+        }
+      }
+    },
+    "methods": {
+      "weighed \u00b7 Simulated scale protocol": 3
+    },
+    "notes": [
+      "Current revision of each service only; superseded snapshots are excluded to prevent revision double-counting.",
+      "Each view uses exactly one provenance category. Finland historical records and synthetic cohorts are never included in user-report totals.",
+      "A basis filter selects services containing that basis; other measurement bases remain explicitly separated inside those services.",
+      "Category totals are separate operator reports, potentially heterogeneous; do not sum them yourself when combined inventory is unavailable.",
+      "Partial coverage, explicit zeros, missing entries and drafts remain distinguishable. Entries are not proven unique physical services.",
+      "Observational comparison \u2014 not causal evidence."
+    ],
+    "provenance_label": "Synthetic demonstration",
+    "service_count": 2,
+    "source_category": "synthetic",
+    "status_filter": "all"
+  },
+  "synthetic_clock": "2026-10-23T12:00:00+00:00",
+  "verification": {
+    "canonical_workflow_sha256": "d07284382ef2f12320d1052bf258816b0270608fd7b7bfe2ba5320d3117ab213",
+    "independent_portion_estimate_kg": 8.0,
+    "independent_remaining_portions": 40,
+    "independent_simulated_scale_sum_kg": 9.7,
+    "independent_surplus_reading_kg": 7.6,
+    "measurement_and_estimate_separate": true,
+    "original_revisions_unchanged": true,
+    "plan_linked_to_original_440_recommendation": true,
+    "portion_conservation": true,
+    "repeat_identical": true,
+    "restart_identical": true,
+    "served_exceeds_prepared_rejected": true,
+    "synthetic_excluded_from_actual_cohorts": true,
+    "unknown_portions": 5,
+    "unknown_prevents_finalization": true
+  }
+}

@@ -1,0 +1,1417 @@
+{
+  "calculation": {
+    "assumptions_and_limitations": [
+      "Assumption-based scenario only: demand values, probabilities, portion mass, and operating constraints are supplied assumptions, not measured demand or validated forecasts.",
+      "Modeled edible surplus is food potentially at risk of waste, not automatically discarded mass or realized food-waste prevention.",
+      "Do not add modeled surplus to historical kitchen/serving waste or forecast waste as non-overlapping measurements; this can double-count the same physical food.",
+      "Scenario-conditional reliability is not a calibrated real-world confidence guarantee. Results are only as defensible as the demand assumptions.",
+      "The Finland dataset does not record production, unconstrained demand, customers turned away, or validated production-plan effects. It cannot establish the effectiveness of these plans.",
+      "This is a one-menu, single-service calculation with fixed portion mass and linear quantities; no nutrition, staffing, inventory, food safety, cost, carbon, donation, or causal impact model is included.",
+      "Sensitivity cases are additional user-specified demand assumptions, not validation of demand forecasts. No constraints are relaxed automatically."
+    ],
+    "baseline": {
+      "capacity_use": 0.96,
+      "expected_demand_portions": 404.0,
+      "expected_fill_rate": 1.0,
+      "expected_served_portions": 404.0,
+      "expected_surplus_kg": 30.4,
+      "expected_surplus_portions": 76.0,
+      "expected_unmet_portions": 0.0,
+      "feasible": true,
+      "outcomes": [
+        {
+          "demand_portions": 360,
+          "fully_served": true,
+          "name": "Low demand",
+          "probability": 0.2,
+          "served_portions": 360,
+          "surplus_mass_kg": 48.0,
+          "surplus_portions": 120,
+          "unmet_portions": 0
+        },
+        {
+          "demand_portions": 400,
+          "fully_served": true,
+          "name": "Normal demand",
+          "probability": 0.5,
+          "served_portions": 400,
+          "surplus_mass_kg": 32.0,
+          "surplus_portions": 80,
+          "unmet_portions": 0
+        },
+        {
+          "demand_portions": 440,
+          "fully_served": true,
+          "name": "High demand",
+          "probability": 0.3,
+          "served_portions": 440,
+          "surplus_mass_kg": 16.0,
+          "surplus_portions": 40,
+          "unmet_portions": 0
+        }
+      ],
+      "probability_fully_served": 1.0,
+      "quantity": 480,
+      "rejection_reasons": [],
+      "zero_expected_demand": false
+    },
+    "candidates": [
+      {
+        "capacity_use": 0.0,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.0,
+        "expected_served_portions": 0.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 404.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 0,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.02,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.024752475247524754,
+        "expected_served_portions": 10.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 394.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 10,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.04,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.04950495049504951,
+        "expected_served_portions": 20.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 384.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 20,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.06,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.07425742574257425,
+        "expected_served_portions": 30.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 374.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 30,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.08,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.09900990099009901,
+        "expected_served_portions": 40.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 364.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 40,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.1,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.12376237623762376,
+        "expected_served_portions": 50.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 354.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 50,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.12,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.1485148514851485,
+        "expected_served_portions": 60.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 344.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 60,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.14,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.17326732673267325,
+        "expected_served_portions": 70.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 334.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 70,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.16,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.19801980198019803,
+        "expected_served_portions": 80.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 324.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 80,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.18,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.22277227722772278,
+        "expected_served_portions": 90.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 314.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 90,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.2,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.24752475247524752,
+        "expected_served_portions": 100.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 304.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 100,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.22,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.2722772277227723,
+        "expected_served_portions": 110.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 294.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 110,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.24,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.297029702970297,
+        "expected_served_portions": 120.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 284.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 120,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.26,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.3217821782178218,
+        "expected_served_portions": 130.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 274.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 130,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.28,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.3465346534653465,
+        "expected_served_portions": 140.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 264.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 140,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.3,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.3712871287128713,
+        "expected_served_portions": 150.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 254.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 150,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.32,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.39603960396039606,
+        "expected_served_portions": 160.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 244.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 160,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.34,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.4207920792079208,
+        "expected_served_portions": 170.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 234.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 170,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.36,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.44554455445544555,
+        "expected_served_portions": 180.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 224.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 180,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.38,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.47029702970297027,
+        "expected_served_portions": 190.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 214.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 190,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.4,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.49504950495049505,
+        "expected_served_portions": 200.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 204.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 200,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.42,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.5198019801980198,
+        "expected_served_portions": 210.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 194.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 210,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.44,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.5445544554455446,
+        "expected_served_portions": 220.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 184.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 220,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.46,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.5693069306930693,
+        "expected_served_portions": 230.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 174.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 230,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.48,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.594059405940594,
+        "expected_served_portions": 240.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 164.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 240,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.5,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.6188118811881188,
+        "expected_served_portions": 250.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 154.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 250,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.52,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.6435643564356436,
+        "expected_served_portions": 260.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 144.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 260,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.54,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.6683168316831684,
+        "expected_served_portions": 270.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 134.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 270,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.56,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.693069306930693,
+        "expected_served_portions": 280.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 124.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 280,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.58,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.7178217821782178,
+        "expected_served_portions": 290.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 114.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 290,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.6,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.7425742574257426,
+        "expected_served_portions": 300.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 104.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 300,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.62,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.7673267326732673,
+        "expected_served_portions": 310.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 94.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 310,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.64,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.7920792079207921,
+        "expected_served_portions": 320.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 84.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 320,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.66,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.8168316831683168,
+        "expected_served_portions": 330.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 74.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 330,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.68,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.8415841584158416,
+        "expected_served_portions": 340.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 64.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 340,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.7,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.8663366336633663,
+        "expected_served_portions": 350.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 54.0,
+        "feasible": false,
+        "probability_fully_served": 0.0,
+        "quantity": 350,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.72,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.8910891089108911,
+        "expected_served_portions": 360.0,
+        "expected_surplus_kg": 0.0,
+        "expected_surplus_portions": 0.0,
+        "expected_unmet_portions": 44.0,
+        "feasible": false,
+        "probability_fully_served": 0.2,
+        "quantity": 360,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.74,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.9108910891089109,
+        "expected_served_portions": 368.0,
+        "expected_surplus_kg": 0.8,
+        "expected_surplus_portions": 2.0,
+        "expected_unmet_portions": 36.0,
+        "feasible": false,
+        "probability_fully_served": 0.2,
+        "quantity": 370,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.76,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.9306930693069307,
+        "expected_served_portions": 376.0,
+        "expected_surplus_kg": 1.6,
+        "expected_surplus_portions": 4.0,
+        "expected_unmet_portions": 28.0,
+        "feasible": false,
+        "probability_fully_served": 0.2,
+        "quantity": 380,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.78,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.9504950495049505,
+        "expected_served_portions": 384.0,
+        "expected_surplus_kg": 2.4,
+        "expected_surplus_portions": 6.0,
+        "expected_unmet_portions": 20.0,
+        "feasible": false,
+        "probability_fully_served": 0.2,
+        "quantity": 390,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.8,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.9702970297029703,
+        "expected_served_portions": 392.0,
+        "expected_surplus_kg": 3.2,
+        "expected_surplus_portions": 8.0,
+        "expected_unmet_portions": 12.0,
+        "feasible": false,
+        "probability_fully_served": 0.7,
+        "quantity": 400,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.82,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.9777227722772277,
+        "expected_served_portions": 395.0,
+        "expected_surplus_kg": 6.0,
+        "expected_surplus_portions": 15.0,
+        "expected_unmet_portions": 9.0,
+        "feasible": false,
+        "probability_fully_served": 0.7,
+        "quantity": 410,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.84,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.9851485148514851,
+        "expected_served_portions": 398.0,
+        "expected_surplus_kg": 8.8,
+        "expected_surplus_portions": 22.0,
+        "expected_unmet_portions": 6.0,
+        "feasible": false,
+        "probability_fully_served": 0.7,
+        "quantity": 420,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.86,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 0.9925742574257426,
+        "expected_served_portions": 401.0,
+        "expected_surplus_kg": 11.6,
+        "expected_surplus_portions": 29.0,
+        "expected_unmet_portions": 3.0,
+        "feasible": false,
+        "probability_fully_served": 0.7,
+        "quantity": 430,
+        "rejection_reasons": [
+          "below_reliability"
+        ],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.88,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 1.0,
+        "expected_served_portions": 404.0,
+        "expected_surplus_kg": 14.4,
+        "expected_surplus_portions": 36.0,
+        "expected_unmet_portions": 0.0,
+        "feasible": true,
+        "probability_fully_served": 1.0,
+        "quantity": 440,
+        "rejection_reasons": [],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.9,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 1.0,
+        "expected_served_portions": 404.0,
+        "expected_surplus_kg": 18.4,
+        "expected_surplus_portions": 46.0,
+        "expected_unmet_portions": 0.0,
+        "feasible": true,
+        "probability_fully_served": 1.0,
+        "quantity": 450,
+        "rejection_reasons": [],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.92,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 1.0,
+        "expected_served_portions": 404.0,
+        "expected_surplus_kg": 22.4,
+        "expected_surplus_portions": 56.0,
+        "expected_unmet_portions": 0.0,
+        "feasible": true,
+        "probability_fully_served": 1.0,
+        "quantity": 460,
+        "rejection_reasons": [],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.94,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 1.0,
+        "expected_served_portions": 404.0,
+        "expected_surplus_kg": 26.4,
+        "expected_surplus_portions": 66.0,
+        "expected_unmet_portions": 0.0,
+        "feasible": true,
+        "probability_fully_served": 1.0,
+        "quantity": 470,
+        "rejection_reasons": [],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.96,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 1.0,
+        "expected_served_portions": 404.0,
+        "expected_surplus_kg": 30.4,
+        "expected_surplus_portions": 76.0,
+        "expected_unmet_portions": 0.0,
+        "feasible": true,
+        "probability_fully_served": 1.0,
+        "quantity": 480,
+        "rejection_reasons": [],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 0.98,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 1.0,
+        "expected_served_portions": 404.0,
+        "expected_surplus_kg": 34.4,
+        "expected_surplus_portions": 86.0,
+        "expected_unmet_portions": 0.0,
+        "feasible": true,
+        "probability_fully_served": 1.0,
+        "quantity": 490,
+        "rejection_reasons": [],
+        "zero_expected_demand": false
+      },
+      {
+        "capacity_use": 1.0,
+        "expected_demand_portions": 404.0,
+        "expected_fill_rate": 1.0,
+        "expected_served_portions": 404.0,
+        "expected_surplus_kg": 38.4,
+        "expected_surplus_portions": 96.0,
+        "expected_unmet_portions": 0.0,
+        "feasible": true,
+        "probability_fully_served": 1.0,
+        "quantity": 500,
+        "rejection_reasons": [],
+        "zero_expected_demand": false
+      }
+    ],
+    "comparison": {
+      "metrics": {
+        "capacity_use": {
+          "baseline": 0.96,
+          "difference_recommended_minus_baseline": -0.08,
+          "recommended": 0.88,
+          "relative_change": -0.08333333333333333
+        },
+        "expected_fill_rate": {
+          "baseline": 1.0,
+          "difference_recommended_minus_baseline": 0.0,
+          "recommended": 1.0,
+          "relative_change": 0.0
+        },
+        "expected_surplus_kg": {
+          "baseline": 30.4,
+          "difference_recommended_minus_baseline": -16.0,
+          "recommended": 14.4,
+          "relative_change": -0.5263157894736842
+        },
+        "expected_surplus_portions": {
+          "baseline": 76.0,
+          "difference_recommended_minus_baseline": -40.0,
+          "recommended": 36.0,
+          "relative_change": -0.5263157894736842
+        },
+        "expected_unmet_portions": {
+          "baseline": 0.0,
+          "difference_recommended_minus_baseline": 0.0,
+          "recommended": 0.0,
+          "relative_change": null
+        },
+        "probability_fully_served": {
+          "baseline": 1.0,
+          "difference_recommended_minus_baseline": 0.0,
+          "recommended": 1.0,
+          "relative_change": 0.0
+        },
+        "quantity": {
+          "baseline": 480,
+          "difference_recommended_minus_baseline": -40.0,
+          "recommended": 440,
+          "relative_change": -0.08333333333333333
+        }
+      },
+      "potential_surplus_reduction_kg": 16.0,
+      "potential_surplus_reduction_portions": 40.0,
+      "relative_surplus_reduction": 0.5263157894736842
+    },
+    "engine_version": "decision03-v1",
+    "evidence_type": "assumption_based",
+    "feasibility": {
+      "feasible_candidates": 7,
+      "issues": [],
+      "maximum_grid_quantity": 500,
+      "maximum_reliability_on_grid": 1.0,
+      "rejected_candidates": 44,
+      "required_capacity": 440
+    },
+    "input_fingerprint": "06b2b854b0018730571961f0ed26541dc8436da0203f71777721ab93fe4e1708",
+    "inputs": {
+      "baseline_portions": 480,
+      "batch_increment": 10,
+      "context_batch_id": null,
+      "demand_scenarios": [
+        {
+          "demand_portions": 360,
+          "name": "Low demand",
+          "probability": 0.2
+        },
+        {
+          "demand_portions": 400,
+          "name": "Normal demand",
+          "probability": 0.5
+        },
+        {
+          "demand_portions": 440,
+          "name": "High demand",
+          "probability": 0.3
+        }
+      ],
+      "maximum_capacity": 500,
+      "menu": 1,
+      "minimum_portions": 0,
+      "planning_date": "2026-10-24",
+      "portion_mass_g": 400.0,
+      "reliability_target": 0.95,
+      "scenario_kind": "synthetic_demo",
+      "sensitivity_percent": 10.0,
+      "title": "SYNTHETIC DEMO SCENARIO \u2014 three possible demand levels"
+    },
+    "numeric_notes": [
+      "Exact rational arithmetic uses the decimal representations of validated JSON numbers. No probability weights are normalized.",
+      "Reliability comparisons are exact; the probability-sum input tolerance does not relax service constraints.",
+      "Relative changes are null when the baseline denominator is zero. Capacity use is null for a positive baseline with zero capacity."
+    ],
+    "objective": "Minimize probability-weighted expected surplus mass over feasible batch quantities.",
+    "probability_sum": 1.0,
+    "recommended": {
+      "capacity_use": 0.88,
+      "expected_demand_portions": 404.0,
+      "expected_fill_rate": 1.0,
+      "expected_served_portions": 404.0,
+      "expected_surplus_kg": 14.4,
+      "expected_surplus_portions": 36.0,
+      "expected_unmet_portions": 0.0,
+      "feasible": true,
+      "outcomes": [
+        {
+          "demand_portions": 360,
+          "fully_served": true,
+          "name": "Low demand",
+          "probability": 0.2,
+          "served_portions": 360,
+          "surplus_mass_kg": 32.0,
+          "surplus_portions": 80,
+          "unmet_portions": 0
+        },
+        {
+          "demand_portions": 400,
+          "fully_served": true,
+          "name": "Normal demand",
+          "probability": 0.5,
+          "served_portions": 400,
+          "surplus_mass_kg": 16.0,
+          "surplus_portions": 40,
+          "unmet_portions": 0
+        },
+        {
+          "demand_portions": 440,
+          "fully_served": true,
+          "name": "High demand",
+          "probability": 0.3,
+          "served_portions": 440,
+          "surplus_mass_kg": 0.0,
+          "surplus_portions": 0,
+          "unmet_portions": 0
+        }
+      ],
+      "probability_fully_served": 1.0,
+      "quantity": 440,
+      "rejection_reasons": [],
+      "zero_expected_demand": false
+    },
+    "scenario_kind": "synthetic_demo",
+    "sensitivity": [
+      {
+        "baseline": {
+          "capacity_use": 0.96,
+          "expected_demand_portions": 363.6,
+          "expected_fill_rate": 1.0,
+          "expected_served_portions": 363.6,
+          "expected_surplus_kg": 46.56,
+          "expected_surplus_portions": 116.4,
+          "expected_unmet_portions": 0.0,
+          "feasible": true,
+          "outcomes": [
+            {
+              "demand_portions": 324,
+              "fully_served": true,
+              "name": "Low demand",
+              "probability": 0.2,
+              "served_portions": 324,
+              "surplus_mass_kg": 62.4,
+              "surplus_portions": 156,
+              "unmet_portions": 0
+            },
+            {
+              "demand_portions": 360,
+              "fully_served": true,
+              "name": "Normal demand",
+              "probability": 0.5,
+              "served_portions": 360,
+              "surplus_mass_kg": 48.0,
+              "surplus_portions": 120,
+              "unmet_portions": 0
+            },
+            {
+              "demand_portions": 396,
+              "fully_served": true,
+              "name": "High demand",
+              "probability": 0.3,
+              "served_portions": 396,
+              "surplus_mass_kg": 33.6,
+              "surplus_portions": 84,
+              "unmet_portions": 0
+            }
+          ],
+          "probability_fully_served": 1.0,
+          "quantity": 480,
+          "rejection_reasons": [],
+          "zero_expected_demand": false
+        },
+        "comparison": {
+          "metrics": {
+            "capacity_use": {
+              "baseline": 0.96,
+              "difference_recommended_minus_baseline": -0.16,
+              "recommended": 0.8,
+              "relative_change": -0.16666666666666666
+            },
+            "expected_fill_rate": {
+              "baseline": 1.0,
+              "difference_recommended_minus_baseline": 0.0,
+              "recommended": 1.0,
+              "relative_change": 0.0
+            },
+            "expected_surplus_kg": {
+              "baseline": 46.56,
+              "difference_recommended_minus_baseline": -32.0,
+              "recommended": 14.56,
+              "relative_change": -0.6872852233676976
+            },
+            "expected_surplus_portions": {
+              "baseline": 116.4,
+              "difference_recommended_minus_baseline": -80.0,
+              "recommended": 36.4,
+              "relative_change": -0.6872852233676976
+            },
+            "expected_unmet_portions": {
+              "baseline": 0.0,
+              "difference_recommended_minus_baseline": 0.0,
+              "recommended": 0.0,
+              "relative_change": null
+            },
+            "probability_fully_served": {
+              "baseline": 1.0,
+              "difference_recommended_minus_baseline": 0.0,
+              "recommended": 1.0,
+              "relative_change": 0.0
+            },
+            "quantity": {
+              "baseline": 480,
+              "difference_recommended_minus_baseline": -80.0,
+              "recommended": 400,
+              "relative_change": -0.16666666666666666
+            }
+          },
+          "potential_surplus_reduction_kg": 32.0,
+          "potential_surplus_reduction_portions": 80.0,
+          "relative_surplus_reduction": 0.6872852233676976
+        },
+        "demand_scenarios": [
+          {
+            "demand_portions": 324,
+            "name": "Low demand",
+            "probability": 0.2
+          },
+          {
+            "demand_portions": 360,
+            "name": "Normal demand",
+            "probability": 0.5
+          },
+          {
+            "demand_portions": 396,
+            "name": "High demand",
+            "probability": 0.3
+          }
+        ],
+        "demand_shift_percent": -10.0,
+        "evidence_type": "assumption_based",
+        "feasibility": {
+          "feasible_candidates": 11,
+          "issues": [],
+          "maximum_grid_quantity": 500,
+          "maximum_reliability_on_grid": 1.0,
+          "rejected_candidates": 40,
+          "required_capacity": 400
+        },
+        "recommended": {
+          "capacity_use": 0.8,
+          "expected_demand_portions": 363.6,
+          "expected_fill_rate": 1.0,
+          "expected_served_portions": 363.6,
+          "expected_surplus_kg": 14.56,
+          "expected_surplus_portions": 36.4,
+          "expected_unmet_portions": 0.0,
+          "feasible": true,
+          "outcomes": [
+            {
+              "demand_portions": 324,
+              "fully_served": true,
+              "name": "Low demand",
+              "probability": 0.2,
+              "served_portions": 324,
+              "surplus_mass_kg": 30.4,
+              "surplus_portions": 76,
+              "unmet_portions": 0
+            },
+            {
+              "demand_portions": 360,
+              "fully_served": true,
+              "name": "Normal demand",
+              "probability": 0.5,
+              "served_portions": 360,
+              "surplus_mass_kg": 16.0,
+              "surplus_portions": 40,
+              "unmet_portions": 0
+            },
+            {
+              "demand_portions": 396,
+              "fully_served": true,
+              "name": "High demand",
+              "probability": 0.3,
+              "served_portions": 396,
+              "surplus_mass_kg": 1.6,
+              "surplus_portions": 4,
+              "unmet_portions": 0
+            }
+          ],
+          "probability_fully_served": 1.0,
+          "quantity": 400,
+          "rejection_reasons": [],
+          "zero_expected_demand": false
+        },
+        "status": "optimal"
+      },
+      {
+        "baseline": {
+          "capacity_use": 0.96,
+          "expected_demand_portions": 444.4,
+          "expected_fill_rate": 0.9972997299729973,
+          "expected_served_portions": 443.2,
+          "expected_surplus_kg": 14.72,
+          "expected_surplus_portions": 36.8,
+          "expected_unmet_portions": 1.2,
+          "feasible": false,
+          "outcomes": [
+            {
+              "demand_portions": 396,
+              "fully_served": true,
+              "name": "Low demand",
+              "probability": 0.2,
+              "served_portions": 396,
+              "surplus_mass_kg": 33.6,
+              "surplus_portions": 84,
+              "unmet_portions": 0
+            },
+            {
+              "demand_portions": 440,
+              "fully_served": true,
+              "name": "Normal demand",
+              "probability": 0.5,
+              "served_portions": 440,
+              "surplus_mass_kg": 16.0,
+              "surplus_portions": 40,
+              "unmet_portions": 0
+            },
+            {
+              "demand_portions": 484,
+              "fully_served": false,
+              "name": "High demand",
+              "probability": 0.3,
+              "served_portions": 480,
+              "surplus_mass_kg": 0.0,
+              "surplus_portions": 0,
+              "unmet_portions": 4
+            }
+          ],
+          "probability_fully_served": 0.7,
+          "quantity": 480,
+          "rejection_reasons": [
+            "below_reliability"
+          ],
+          "zero_expected_demand": false
+        },
+        "comparison": {
+          "metrics": {
+            "capacity_use": {
+              "baseline": 0.96,
+              "difference_recommended_minus_baseline": 0.02,
+              "recommended": 0.98,
+              "relative_change": 0.020833333333333332
+            },
+            "expected_fill_rate": {
+              "baseline": 0.9972997299729973,
+              "difference_recommended_minus_baseline": 0.0027002700270027,
+              "recommended": 1.0,
+              "relative_change": 0.002707581227436823
+            },
+            "expected_surplus_kg": {
+              "baseline": 14.72,
+              "difference_recommended_minus_baseline": 3.52,
+              "recommended": 18.24,
+              "relative_change": 0.2391304347826087
+            },
+            "expected_surplus_portions": {
+              "baseline": 36.8,
+              "difference_recommended_minus_baseline": 8.8,
+              "recommended": 45.6,
+              "relative_change": 0.2391304347826087
+            },
+            "expected_unmet_portions": {
+              "baseline": 1.2,
+              "difference_recommended_minus_baseline": -1.2,
+              "recommended": 0.0,
+              "relative_change": -1.0
+            },
+            "probability_fully_served": {
+              "baseline": 0.7,
+              "difference_recommended_minus_baseline": 0.3,
+              "recommended": 1.0,
+              "relative_change": 0.42857142857142855
+            },
+            "quantity": {
+              "baseline": 480,
+              "difference_recommended_minus_baseline": 10.0,
+              "recommended": 490,
+              "relative_change": 0.020833333333333332
+            }
+          },
+          "potential_surplus_reduction_kg": -3.52,
+          "potential_surplus_reduction_portions": -8.8,
+          "relative_surplus_reduction": -0.23913043478260868
+        },
+        "demand_scenarios": [
+          {
+            "demand_portions": 396,
+            "name": "Low demand",
+            "probability": 0.2
+          },
+          {
+            "demand_portions": 440,
+            "name": "Normal demand",
+            "probability": 0.5
+          },
+          {
+            "demand_portions": 484,
+            "name": "High demand",
+            "probability": 0.3
+          }
+        ],
+        "demand_shift_percent": 10.0,
+        "evidence_type": "assumption_based",
+        "feasibility": {
+          "feasible_candidates": 2,
+          "issues": [],
+          "maximum_grid_quantity": 500,
+          "maximum_reliability_on_grid": 1.0,
+          "rejected_candidates": 49,
+          "required_capacity": 490
+        },
+        "recommended": {
+          "capacity_use": 0.98,
+          "expected_demand_portions": 444.4,
+          "expected_fill_rate": 1.0,
+          "expected_served_portions": 444.4,
+          "expected_surplus_kg": 18.24,
+          "expected_surplus_portions": 45.6,
+          "expected_unmet_portions": 0.0,
+          "feasible": true,
+          "outcomes": [
+            {
+              "demand_portions": 396,
+              "fully_served": true,
+              "name": "Low demand",
+              "probability": 0.2,
+              "served_portions": 396,
+              "surplus_mass_kg": 37.6,
+              "surplus_portions": 94,
+              "unmet_portions": 0
+            },
+            {
+              "demand_portions": 440,
+              "fully_served": true,
+              "name": "Normal demand",
+              "probability": 0.5,
+              "served_portions": 440,
+              "surplus_mass_kg": 20.0,
+              "surplus_portions": 50,
+              "unmet_portions": 0
+            },
+            {
+              "demand_portions": 484,
+              "fully_served": true,
+              "name": "High demand",
+              "probability": 0.3,
+              "served_portions": 484,
+              "surplus_mass_kg": 2.4,
+              "surplus_portions": 6,
+              "unmet_portions": 0
+            }
+          ],
+          "probability_fully_served": 1.0,
+          "quantity": 490,
+          "rejection_reasons": [],
+          "zero_expected_demand": false
+        },
+        "status": "optimal"
+      }
+    ],
+    "status": "optimal",
+    "tie_break": "Lowest expected surplus mass, then lowest expected unmet portions, then lowest quantity."
+  },
+  "evidence_type": "assumption_based",
+  "metadata": {
+    "algorithm": "Exact enumeration of integer multiples of the batch increment from zero through capacity.",
+    "assumptions_and_limitations": [
+      "Assumption-based scenario only: demand values, probabilities, portion mass, and operating constraints are supplied assumptions, not measured demand or validated forecasts.",
+      "Modeled edible surplus is food potentially at risk of waste, not automatically discarded mass or realized food-waste prevention.",
+      "Do not add modeled surplus to historical kitchen/serving waste or forecast waste as non-overlapping measurements; this can double-count the same physical food.",
+      "Scenario-conditional reliability is not a calibrated real-world confidence guarantee. Results are only as defensible as the demand assumptions.",
+      "The Finland dataset does not record production, unconstrained demand, customers turned away, or validated production-plan effects. It cannot establish the effectiveness of these plans.",
+      "This is a one-menu, single-service calculation with fixed portion mass and linear quantities; no nutrition, staffing, inventory, food safety, cost, carbon, donation, or causal impact model is included.",
+      "Sensitivity cases are additional user-specified demand assumptions, not validation of demand forecasts. No constraints are relaxed automatically."
+    ],
+    "engine_version": "decision03-v1",
+    "evidence_type": "assumption_based",
+    "limits": {
+      "maximum_candidates": 2001,
+      "maximum_capacity": 10000,
+      "maximum_demand": 100000,
+      "maximum_portion_mass_g": 10000,
+      "maximum_request_bytes": 65536,
+      "maximum_scenarios": 30
+    },
+    "objective": "Minimize probability-weighted expected surplus mass over feasible batch quantities.",
+    "probability_policy": "Weights are used unchanged; no normalization. Feasibility uses exact comparisons on validated decimal representations.",
+    "probability_sum_tolerance": 1e-09,
+    "rejection_reason_labels": {
+      "below_minimum": "Below the minimum production quantity.",
+      "below_reliability": "Does not meet the scenario-conditional full-service reliability target.",
+      "exceeds_capacity": "Exceeds preparation capacity.",
+      "not_batch_multiple": "Not a multiple of the batch increment."
+    },
+    "sensitivity_rounding": "Scale each integer demand by (1 +/- percentage/100), then round half up to whole portions.",
+    "tie_break": "Lowest expected surplus mass, then lowest expected unmet portions, then lowest quantity.",
+    "zero_demand_policy": "Expected fill rate is 1 by convention when expected demand is zero; no demand remains unserved."
+  },
+  "notice": "SYNTHETIC DEMO SCENARIO. These are assumed quantities, not measured school records, realized waste prevention, or causal evidence.",
+  "scenario_kind": "synthetic_demo",
+  "verification": {
+    "acceptance_passed": true,
+    "canonical_calculation_sha256": "e6c9d1a0e6d761e1815baf7d29f162a7a2f559eb88c19e593e7e8d8e80d0e198",
+    "executed_values": {
+      "baseline_surplus_kg": 30.4,
+      "baseline_surplus_portions": 76.0,
+      "modeled_surplus_difference_kg": 16.0,
+      "modeled_surplus_difference_portions": 40.0,
+      "recommended_quantity": 440,
+      "recommended_surplus_kg": 14.4,
+      "recommended_surplus_portions": 36.0
+    },
+    "expected_acceptance_values": {
+      "baseline_surplus_kg": 30.4,
+      "baseline_surplus_portions": 76.0,
+      "modeled_surplus_difference_kg": 16.0,
+      "modeled_surplus_difference_portions": 40.0,
+      "recommended_quantity": 440,
+      "recommended_surplus_kg": 14.4,
+      "recommended_surplus_portions": 36.0
+    },
+    "independent_brute_force_quantity": 440,
+    "repeat_identical": true
+  }
+}

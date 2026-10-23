@@ -1,0 +1,19 @@
+{
+  "planning_date": "2026-10-24",
+  "title": "SYNTHETIC DEMO SCENARIO — three possible demand levels",
+  "menu": 1,
+  "scenario_kind": "synthetic_demo",
+  "baseline_portions": 480,
+  "portion_mass_g": 400.0,
+  "batch_increment": 10,
+  "maximum_capacity": 500,
+  "minimum_portions": 0,
+  "reliability_target": 0.95,
+  "demand_scenarios": [
+    { "name": "Low demand", "demand_portions": 360, "probability": 0.20 },
+    { "name": "Normal demand", "demand_portions": 400, "probability": 0.50 },
+    { "name": "High demand", "demand_portions": 440, "probability": 0.30 }
+  ],
+  "sensitivity_percent": 10.0,
+  "context_batch_id": null
+}

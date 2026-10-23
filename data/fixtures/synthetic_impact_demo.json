@@ -1,0 +1,24 @@
+{
+  "notice": "SYNTHETIC DEMONSTRATION ONLY. No kitchen pilot occurred; scale readings and outcomes are simulated.",
+  "complete": {
+    "service_date": "2026-10-22", "site": "Synthetic demo kitchen", "menu": "1",
+    "prepared": 440, "served": 400, "turn_aways": 0, "observed_diners": 400, "portion_mass_g": 400.0,
+    "source_category": "synthetic", "count_method": "Synthetic counts for acceptance testing",
+    "operator_notes": "Explicitly synthetic. No actual service or physical weighing took place.",
+    "dispositions": {"donated": 10, "retained": 10, "repurposed": 0, "discarded": 20, "unknown": 0},
+    "disjoint_scope_note": "Simulated separate collection: unserved discarded food; plate returns; preparation scraps. No transfers, containers or duplicated material across streams.",
+    "measurements": [
+      {"category": "discarded_surplus", "mass_kg": 7.6, "basis": "weighed", "method": "Simulated scale protocol", "scope_description": "Only unserved discarded prepared food; excludes plate returns and preparation scraps", "scope_status": "disjoint_stream", "material_type": "food_and_inedible", "destination": "compost", "notes": "Simulated scale reading; not a physical measurement."},
+      {"category": "plate_waste", "mass_kg": 1.2, "basis": "weighed", "method": "Simulated scale protocol", "scope_description": "Only plate returns; excludes unserved food and preparation scraps", "scope_status": "disjoint_stream", "material_type": "food_and_inedible", "destination": "compost", "notes": "Simulated scale reading; not a physical measurement."},
+      {"category": "preparation_waste", "mass_kg": 0.9, "basis": "weighed", "method": "Simulated scale protocol", "scope_description": "Only preparation scraps; excludes unserved food and plate returns", "scope_status": "disjoint_stream", "material_type": "food_and_inedible", "destination": "compost", "notes": "Simulated scale reading; not a physical measurement."}
+    ], "documents": []
+  },
+  "incomplete": {
+    "service_date": "2026-10-22", "site": "Synthetic demo kitchen", "menu": "1",
+    "prepared": 430, "served": 400, "turn_aways": null, "observed_diners": null, "portion_mass_g": 400.0,
+    "source_category": "synthetic", "count_method": "Synthetic counts for acceptance testing",
+    "operator_notes": "Explicitly synthetic incomplete record; five portions have unknown disposition.",
+    "dispositions": {"donated": 10, "retained": 10, "repurposed": 0, "discarded": 5, "unknown": 5},
+    "measurements": [], "disjoint_scope_note": "", "documents": []
+  }
+}

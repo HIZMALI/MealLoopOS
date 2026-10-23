@@ -1,0 +1,577 @@
+.decision-studio {
+  display: grid;
+  gap: 22px;
+  min-width: 0;
+}
+.decision-studio .panel {
+  min-width: 0;
+}
+.decision-evidence-banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid #d8dfc7;
+  border-radius: 12px;
+  background: #eef2e3;
+  padding: 22px;
+}
+.decision-evidence-banner strong {
+  font-size: 12px;
+  letter-spacing: 1.1px;
+  color: #596e3e;
+}
+.decision-evidence-banner p {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #66725b;
+  margin-top: 6px;
+  max-width: 680px;
+}
+.decision-evidence-banner > .badge {
+  margin-left: auto;
+}
+.decision-symbol {
+  background: #e5ebd7;
+  color: #6b8250;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+.badge.decision-badge {
+  background: #f4eacb;
+  color: #866b30;
+  border: 1px solid #e8dcae;
+  white-space: normal;
+}
+.decision-toolbar,
+.decision-result-toolbar,
+.decision-run-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.decision-toolbar > div,
+.decision-result-toolbar > div:last-child {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.decision-toolbar p,
+.decision-result-toolbar p {
+  font-size: 12px;
+  color: #7c8674;
+  line-height: 1.6;
+}
+.decision-result-toolbar p {
+  margin-top: 8px;
+}
+.decision-form fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-width: 0;
+  display: grid;
+  gap: 22px;
+}
+.decision-input-grid {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr;
+  gap: 22px;
+  min-width: 0;
+}
+.decision-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.decision-full {
+  grid-column: 1 / -1;
+}
+.decision-studio .field {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  font-size: 12px;
+  color: #55644b;
+  margin-bottom: 0;
+}
+.decision-studio .field input {
+  width: 100%;
+  min-width: 0;
+  font-size: 13px;
+  height: 42px;
+}
+.decision-studio .muted {
+  color: #9aa48e;
+  font-size: 10px;
+}
+.decision-studio .field-help {
+  color: #869079;
+  font-size: 11px;
+  line-height: 1.75;
+  margin: 12px 0 20px;
+}
+.decision-fields + .field-help {
+  margin-bottom: 0;
+}
+.decision-rule {
+  display: flex;
+  gap: 12px;
+  background: #f7f8f2;
+  border: 1px solid #e9ecdf;
+  padding: 16px;
+  border-radius: 9px;
+  color: #75835f;
+  margin-top: 24px;
+}
+.decision-rule svg {
+  flex-shrink: 0;
+}
+.decision-rule p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.context-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 18px;
+  font-size: 11px;
+  color: #7b846f;
+  line-height: 1.7;
+}
+.context-checkbox input {
+  margin-top: 4px;
+  accent-color: #7c9560;
+}
+.demand-editor {
+  display: grid;
+  gap: 14px;
+}
+.demand-editor-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 30px;
+  gap: 14px;
+  align-items: end;
+  padding: 15px;
+  background: #fafbf7;
+  border: 1px solid #e9ecdf;
+  border-radius: 9px;
+}
+.demand-editor-row .icon-button {
+  height: 42px;
+  color: #9a9c88;
+}
+.probability-total {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 15px 0 0;
+  color: #9b824b;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.probability-total.valid {
+  color: #708453;
+}
+.probability-total strong {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.decision-demand-empty,
+.decision-result-empty {
+  text-align: center;
+  padding: 24px;
+  color: #96a283;
+}
+.decision-demand-empty p,
+.decision-result-empty p {
+  margin: 12px auto 0;
+  font-size: 12px;
+  line-height: 1.8;
+  max-width: 500px;
+  color: #8d9782;
+}
+.decision-result-empty h3 {
+  margin-top: 12px;
+  color: #69795a;
+  font-size: 16px;
+}
+.decision-run-bar {
+  padding: 0 2px;
+}
+.decision-run-bar > span {
+  font-size: 11px;
+  color: #909981;
+}
+.decision-results {
+  display: grid;
+  gap: 22px;
+  min-width: 0;
+}
+.decision-feasible {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #698350;
+  background: #eff4e7;
+  border: 1px solid #dce5ce;
+  padding: 14px 18px;
+  border-radius: 9px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.decision-infeasible p {
+  margin-top: 10px;
+}
+.decision-infeasible ul {
+  padding-left: 18px;
+  margin: 8px 0 0;
+  line-height: 1.8;
+}
+.decision-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+}
+.decision-metric-grid .metric-card {
+  padding: 20px;
+  min-width: 0;
+}
+.decision-metric-grid .eyebrow {
+  min-height: 34px;
+  font-size: 9px;
+  line-height: 1.7;
+}
+.decision-metric-grid .metric-value {
+  font-size: 29px;
+  flex-wrap: wrap;
+}
+.decision-metric-grid .metric-card > p:last-child {
+  font-size: 10px;
+  color: #8d9780;
+  line-height: 1.8;
+  margin-top: 12px;
+}
+.decision-studio .table-scroll {
+  max-width: 100%;
+}
+.decision-studio table {
+  min-width: 690px;
+  width: 100%;
+}
+.decision-studio table td,
+.decision-studio table th {
+  white-space: normal;
+  line-height: 1.6;
+}
+.decision-studio table td:first-child {
+  min-width: 170px;
+}
+.decision-studio .chart-footnote {
+  margin-top: 17px;
+}
+.decision-outcomes {
+  border-top: 1px solid #edf0e6;
+  padding-top: 18px;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #78876a;
+}
+.decision-outcomes summary,
+.decision-audit summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.decision-outcomes .table-scroll {
+  margin-top: 16px;
+}
+.decision-chart-legend {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  color: #8c977f;
+  font-size: 10px;
+  margin-bottom: 16px;
+}
+.decision-chart-legend > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.decision-chart-legend i {
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+}
+.decision-amber-dot {
+  background: #b89154;
+}
+.decision-feasible-dot {
+  background: #557b44;
+}
+.decision-rejected-dot {
+  background: #bac3b0;
+}
+.decision-trade-chart {
+  width: 100%;
+  height: 260px;
+  min-width: 0;
+}
+.decision-reliability-chart {
+  width: 100%;
+  height: 170px;
+  min-width: 0;
+  margin-top: 20px;
+}
+.quantity-inspector {
+  margin-top: 25px;
+  padding: 20px;
+  border: 1px solid #e4e9da;
+  background: #f9faf5;
+  border-radius: 10px;
+  color: #78886b;
+  font-size: 12px;
+}
+.quantity-inspector input {
+  width: 100%;
+  padding: 0;
+  height: 28px;
+  margin: 12px 0;
+  accent-color: #819b65;
+}
+.quantity-inspector p {
+  font-size: 11px;
+  line-height: 1.7;
+  margin-top: 11px;
+}
+.inspection-feasible {
+  color: #68834f;
+}
+.inspection-infeasible {
+  color: #ae8a4a;
+}
+.inspector-metrics {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.inspector-metrics strong {
+  display: block;
+  color: #637a50;
+  margin-top: 5px;
+}
+.sensitivity-assumption {
+  padding: 18px 0;
+  border-bottom: 1px solid #edf0e6;
+}
+.sensitivity-assumption p {
+  margin-top: 9px;
+  line-height: 1.8;
+}
+.decision-audit {
+  padding: 20px;
+  border: 1px solid #e6eada;
+  border-radius: 10px;
+  color: #87947a;
+  font-size: 11px;
+  line-height: 1.9;
+}
+.decision-audit p {
+  margin-top: 12px;
+}
+.decision-studio code {
+  overflow-wrap: anywhere;
+}
+.decision-snapshot-note {
+  font-size: 10px;
+  color: #8c967f;
+  line-height: 1.9;
+}
+.saved-decision-list {
+  display: grid;
+  gap: 10px;
+}
+.saved-decision-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 14px;
+  border: 1px solid #e6ebdd;
+  border-radius: 8px;
+  background: #fbfcf8;
+  padding: 14px;
+  color: #748663;
+}
+.saved-decision-item > div {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.saved-decision-item strong {
+  font-size: 12px;
+}
+.saved-decision-item p {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #96a087;
+  margin-top: 5px;
+}
+.decision-context-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+.decision-context-grid h3 {
+  font-size: 14px;
+  color: #77866a;
+  margin-top: 15px;
+}
+.decision-context-grid p {
+  margin-top: 14px;
+  font-size: 12px;
+  line-height: 1.9;
+  color: #8f9984;
+}
+.decision-studio .technical-details {
+  margin-top: 24px;
+  font-size: 11px;
+  line-height: 1.9;
+}
+.decision-studio .technical-details p {
+  margin-top: 12px;
+}
+@media (max-width: 1150px) {
+  .decision-evidence-banner {
+    flex-wrap: wrap;
+  }
+  .decision-evidence-banner > div {
+    flex: 1;
+    min-width: 200px;
+  }
+  .decision-evidence-banner > .badge {
+    margin-left: 60px;
+  }
+  .decision-metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 900px) {
+  .decision-input-grid {
+    grid-template-columns: 1fr;
+  }
+  .decision-toolbar,
+  .decision-result-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .decision-context-grid {
+    gap: 22px;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 550px) {
+  .decision-studio {
+    gap: 16px;
+  }
+  .decision-evidence-banner {
+    padding: 17px;
+    gap: 10px;
+  }
+  .decision-evidence-banner > .badge {
+    margin-left: 0;
+  }
+  .decision-evidence-banner > div {
+    min-width: 190px;
+  }
+  .decision-evidence-banner .decision-symbol {
+    display: none;
+  }
+  .decision-fields {
+    gap: 16px 12px;
+  }
+  .decision-studio .field {
+    font-size: 11px;
+  }
+  .decision-studio .field input {
+    padding: 9px;
+  }
+  .demand-editor-row {
+    grid-template-columns: 1fr 1fr 25px;
+    gap: 12px;
+    padding: 12px;
+  }
+  .demand-editor-row .field:first-child {
+    grid-column: 1 / -1;
+  }
+  .probability-total {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .decision-run-bar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .decision-run-bar .button {
+    width: 100%;
+    justify-content: center;
+  }
+  .decision-metric-grid {
+    gap: 10px;
+  }
+  .decision-metric-grid .metric-card {
+    padding: 16px 12px;
+  }
+  .decision-metric-grid .metric-value {
+    font-size: 24px;
+  }
+  .decision-metric-grid .eyebrow {
+    min-height: 46px;
+    font-size: 8px;
+  }
+  .decision-studio .panel-heading {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .decision-studio .pagination {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .quantity-inspector {
+    padding: 14px;
+  }
+  .quantity-inspector label {
+    line-height: 1.9;
+  }
+  .inspector-metrics {
+    gap: 12px;
+  }
+  .decision-chart-legend {
+    gap: 12px;
+  }
+  .saved-decision-item {
+    padding: 12px;
+  }
+  .saved-decision-item .decision-symbol {
+    display: none;
+  }
+  .decision-toolbar > div {
+    width: 100%;
+  }
+  .decision-toolbar > div .button {
+    flex: 1;
+    justify-content: center;
+    padding: 10px;
+    font-size: 11px;
+  }
+}

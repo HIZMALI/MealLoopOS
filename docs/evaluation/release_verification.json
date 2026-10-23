@@ -1,0 +1,90 @@
+{
+  "checks": {
+    "backend_tests": {
+      "elapsed_seconds": 25.84,
+      "failed": 0,
+      "passed": 398,
+      "warnings": [
+        "Upstream Starlette/httpx TestClient deprecation"
+      ]
+    },
+    "fresh_setup_ps1": true,
+    "frontend_production_build": true,
+    "frontend_typecheck": true,
+    "npm_dependency_tree": true,
+    "pip_check": true,
+    "public_demo_initialization": true,
+    "publication_audit_passed": true,
+    "scientific_evaluations_byte_identical": 3
+  },
+  "critical_release_gates": {
+    "dependency_integrity": true,
+    "fail_closed_configuration": true,
+    "public_http_reproducibility_and_isolation": true,
+    "required_documentation": true,
+    "source_and_evidence_fingerprints": true
+  },
+  "dependency_advisories": {
+    "known_python_advisories": 0,
+    "note": "Time-dependent scans; Python pins lack wheel hashes.",
+    "npm_ci_audit_advisories": 0,
+    "python_locked_packages": 41
+  },
+  "development_source_commit": "c152279a93e2ee6abfbe2791b43ef7ad536967b4",
+  "distribution": "Curated public snapshot; original development repository/history preserved separately.",
+  "environment": {
+    "node": "v24.13.1",
+    "os": "Windows",
+    "python": "3.14.0"
+  },
+  "http_smoke": [
+    {
+      "all_three_previews_stateless": true,
+      "database_hash_unchanged": true,
+      "foreign_origin_rejected": true,
+      "http_checks_passed": true,
+      "invalid_host_rejected": true,
+      "kind": "fresh_seed",
+      "private_cohort_denied": true,
+      "third_party_notices_served": true
+    },
+    {
+      "all_three_previews_stateless": true,
+      "database_hash_unchanged": true,
+      "foreign_origin_rejected": true,
+      "http_checks_passed": true,
+      "invalid_host_rejected": true,
+      "kind": "prepared_restart",
+      "private_cohort_denied": true,
+      "third_party_notices_served": true
+    },
+    {
+      "all_three_previews_stateless": true,
+      "database_hash_unchanged": true,
+      "foreign_origin_rejected": true,
+      "http_checks_passed": true,
+      "invalid_host_rejected": true,
+      "kind": "ephemeral_reseed",
+      "private_cohort_denied": true,
+      "third_party_notices_served": true
+    }
+  ],
+  "limits": [
+    "Local verification only; no Linux/Render deployment or TLS/edge verification.",
+    "No real pilot, verified savings, causal effect or calibrated operational reliability.",
+    "Publication scan is heuristic, not independent security certification."
+  ],
+  "release": "0.5.0",
+  "release_decision": "READY",
+  "scientific_fingerprints": {
+    "data/fixtures/synthetic_decision_demo.json": "8e78ae6926b8e2b8233fac40e7d9b3adf328ae8629d9225fb327187a72a14945",
+    "data/fixtures/synthetic_impact_demo.json": "d8c74faa720e44a0321fff75920c901479655a9b5ec77e476f000e83ae4bd860",
+    "data/public_demo/forecast_artifact.json": "2142d76e9139eb62b45d6950599c41c9327f3bd0e4aa9683540f7fdb8655c524",
+    "data/raw/Food waste data school Finland 2024-2025.xlsx": "2ffad746b7ed5d536a0c99c37d8e249230d95d5fb2d041d85d01b69499f99624",
+    "docs/evaluation/build_02_evaluation.json": "0d5bdc9386b3661502a48b69d5fc602bbf13874dba16ea852bc8a85dbc82092b",
+    "docs/evaluation/build_03_evaluation.json": "5ee457fde23650315345cd3d48c21a17e2e5834910f186a5e78d6353105dd5b3",
+    "docs/evaluation/build_04_evaluation.json": "d09e6523bcbc6f0efb5748f9b102273b3a1452527a8ce2fd00b9d72d4c8b863c"
+  },
+  "timezone": "Europe/Istanbul",
+  "verified_date": "2026-10-23"
+}
