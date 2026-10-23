@@ -1,6 +1,6 @@
-# Impact Ledger measurement protocol — Build 04
+# Impact Ledger measurement protocol
 
-Assessment version: **impact04-v1**. This is a local operational reporting and accounting protocol, not an independently assured inventory, food safety procedure or causal trial. The original Finland workbook and Builds 02/03 remain unchanged.
+Assessment version: **impact04-v1**. This is a local operational reporting and accounting protocol, not an independently assured inventory, food safety procedure or causal trial. The original Finland workbook, forecasting evaluation and decision definitions remain unchanged.
 
 ## Evidence and provenance
 

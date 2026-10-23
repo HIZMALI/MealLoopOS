@@ -1,4 +1,4 @@
-# Executed model evaluation — Build 02
+# Executed model evaluation
 
 Executed October 23, 2026 (Europe/Istanbul), using the normalized, checksum-verified official measured batch. All figures below are computed by the committed protocol; no placeholders or invented accuracy percentages are used.
 

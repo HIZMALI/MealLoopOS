@@ -336,7 +336,7 @@ export default function App() {
             </button>
           </div>
           <div className="build-info">
-            <span className="status-dot" /> BUILD 05 RC{" "}
+            <span className="status-dot" /> v0.5.0{" "}
             <span>Arbiter Hacks V1</span>
           </div>
         </div>
@@ -1466,7 +1466,7 @@ function Methodology() {
           <ShieldCheck size={28} />
         </span>
         <div>
-          <p className="eyebrow">BUILD 04 · EVIDENCE FIRST</p>
+          <p className="eyebrow">EVIDENCE FIRST</p>
           <h2>Useful intelligence starts with honest numbers.</h2>
           <p>
             MealLoop OS makes recorded food waste understandable and auditable.

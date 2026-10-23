@@ -1,13 +1,16 @@
 {
   "checks": {
     "backend_tests": {
-      "elapsed_seconds": 25.84,
+      "elapsed_seconds": 25.88,
       "failed": 0,
       "passed": 398,
       "warnings": [
         "Upstream Starlette/httpx TestClient deprecation"
       ]
     },
+    "browser_warning_or_error_entries": 0,
+    "built_frontend_internal_build_labels_absent": true,
+    "desktop_and_390px_navigation": true,
     "fresh_setup_ps1": true,
     "frontend_production_build": true,
     "frontend_typecheck": true,

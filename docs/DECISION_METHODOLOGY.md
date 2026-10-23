@@ -1,4 +1,4 @@
-# Decision Studio methodology — Build 03
+# Decision Studio methodology
 
 Engine: **decision03-v1**. Evidence: **assumption_based**. Scope: one menu, one service, fixed portion mass, finite user-specified demand distribution. This describes executed `backend/app/decisions.py` code, not a validated demand or impact model.
 
@@ -85,4 +85,4 @@ The demo produces Q=440, baseline surplus 76 portions/30.4 kg, recommended surpl
 
 The model omits nutrition, food safety, preparation timing, staffing, shared capacity, inventory, substitutions, costs, emissions, donation eligibility and disposal decisions. Fixed portion mass may approximate reality poorly; probabilities are not automatically estimated/calibrated. Mathematical optimality within this model does not establish an effective kitchen policy.
 
-Before impact claims, co-design constraints with staff and collect timestamped planned/actual preparation, portion mass, meals served, unmet demand/turn-aways, substitutions, edible surplus, reuse/donation/disposal and comparable waste measurements. Predeclare a prospective comparison design with service outcomes and confounder handling. Future demand models need pre-service input availability, chronological baseline-only selection and new external/prospective validation. Do not tune on the already reported intervention holdout or attribute the original study's intervention to MealLoop OS. Build 04 now provides separate operational reporting/accounting infrastructure; it has not performed a real pilot or established impact. Build 05 adds isolated read-only demonstration access without changing this engine.
+Before impact claims, co-design constraints with staff and collect timestamped planned/actual preparation, portion mass, meals served, unmet demand/turn-aways, substitutions, edible surplus, reuse/donation/disposal and comparable waste measurements. Predeclare a prospective comparison design with service outcomes and confounder handling. Future demand models need pre-service input availability, chronological baseline-only selection and new external/prospective validation. Do not tune on the already reported intervention holdout or attribute the original study's intervention to MealLoop OS. Impact Ledger provides separate operational accounting, and public-demo access is isolated and read-only. Neither establishes a real pilot or impact.

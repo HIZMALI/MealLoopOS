@@ -80,9 +80,9 @@ Let `Pᵢ`, `Kᵢ` be kg plate and kitchen mass, and `Nᵢ` diners.
 
 Official-data regression totals: **1,407.754 kg plate**, **1,243.880 kg kitchen**, **2,651.634 kg combined recorded**. Complete mass: **2,642.518 kg over 154 days**. The per-diner denominator is **61,233 diners over those same 154 days**, giving **43.155129 g/diner**. All 155 rows record **61,652 diners**, which is deliberately *not* used as the denominator for that incomplete combined-mass numerator.
 
-## Build 02 forecasting targets
+## Forecasting targets
 
-The descriptive Build 01 aggregation contract above is unchanged. Forecasting uses a stricter **paired** quality cohort: exclude a whole target day when either primary mass is missing, diners are missing/nonpositive, or a source conflict/duplicate note is present. Both component targets are calculated as kg × 1,000 / observed diners; combined is their sum. Reported rates are never targets. This excludes days 18, 136, and 151 from modeling, leaving 152 eligible days (134 baseline, 18 holdout), while every source row remains persisted and visible.
+The descriptive aggregation contract above is unchanged. Forecasting uses a stricter **paired** quality cohort: exclude a whole target day when either primary mass is missing, diners are missing/nonpositive, or a source conflict/duplicate note is present. Both component targets are calculated as kg × 1,000 / observed diners; combined is their sum. Reported rates are never targets. This excludes days 18, 136, and 151 from modeling, leaving 152 eligible days (134 baseline, 18 holdout), while every source row remains persisted and visible.
 
 Modeling loss is an equal-day average of errors in g/diner, distinct from the descriptive diner-weighted aggregate. Actual diners are target denominators, not forecast features. Future planned attendance is a user assumption for estimated-kg conversion. See `FORECAST_METHODOLOGY.md` for chronological availability, exclusion logs, fixed validation cutoffs, and the separate production fit.
 

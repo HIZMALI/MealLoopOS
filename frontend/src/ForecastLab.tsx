@@ -233,7 +233,7 @@ export default function ForecastLab({
           </p>
         </div>
         <span className="badge forecast-badge">
-          <FlaskConical size={13} /> FORECAST LAB · BUILD 02
+          <FlaskConical size={13} /> FORECAST LAB
         </span>
       </div>
       {error && (
@@ -963,7 +963,7 @@ function Validation({ evaluation: e }: { evaluation: Evaluation }) {
             Evaluation coverage: {e.baseline_period.eligible}/
             {e.baseline_period.total} eligible baseline days;{" "}
             {e.holdout_period.eligible}/{e.holdout_period.total} holdout days.
-            Build 01 retains all original measurements and notes.
+            All original measurements and audit notes remain available.
           </p>
         </Card>
       </div>

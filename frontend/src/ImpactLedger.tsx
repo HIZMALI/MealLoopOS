@@ -290,7 +290,7 @@ export default function ImpactLedger() {
           <ClipboardList size={25} />
         </span>
         <div>
-          <p className="eyebrow">OPERATIONAL EVIDENCE · BUILD 04</p>
+          <p className="eyebrow">OPERATIONAL EVIDENCE</p>
           <h2>What was planned. What happened. What is supported.</h2>
           <p>
             Keep reported service outcomes, physical readings and planning

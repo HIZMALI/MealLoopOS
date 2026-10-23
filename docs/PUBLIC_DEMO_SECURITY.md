@@ -57,7 +57,7 @@ Responses passing through the security gate carry nosniff, frame denial, no-refe
 
 ## Reproducible isolation
 
-`prepare_public_demo.py` imports only committed, SHA-256 checked public source/evidence/fixtures. It does not read the normal database or download replacements. The prepared forecast JSON matches Build 02 evaluation exactly; mismatched library configuration fails closed, with no startup retraining. Seed capture/import timestamps are fixed **synthetic demonstration metadata**, not proof of service occurrence. Assessment/plan engines and all applied migrations remain unchanged.
+`prepare_public_demo.py` imports only committed, SHA-256 checked public source/evidence/fixtures. It does not read the normal database or download replacements. The prepared forecast JSON matches the published evaluation exactly; mismatched library configuration fails closed, with no startup retraining. Seed capture/import timestamps are fixed **synthetic demonstration metadata**, not proof of service occurrence. Assessment/plan engines and all applied migrations remain unchanged.
 
 Startup validates input hashes, manifest/database digest, migration, counts, source/category identity and normalized forecasting identity. The manifest is a trusted local integrity check, not a cryptographic signature against a compromised operator/host. Demo files/directory must not redirect via symlinks/junctions. Missing state is recreated offline by the public runner. Existing modified/partial state is refused; move the generated `.public-demo` directory aside while the server is stopped before a deliberate rebuild. The command never deletes unknown files or falls back to the local DB.
 

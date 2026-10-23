@@ -1,6 +1,6 @@
-# Forecast methodology — Build 02
+# Forecast methodology
 
-Version **build02-v1**, quality policy **strict-paired-v1**. This protocol was implemented before inspecting holdout performance. No hyperparameters or candidate definitions were changed in response to the final holdout. It extends Build 01 without modifying raw or normalized source records. See `MODEL_EVALUATION.md` and `evaluation/build_02_evaluation.json` for executed evidence.
+Version **build02-v1**, quality policy **strict-paired-v1**. This protocol was implemented before inspecting holdout performance. No hyperparameters or candidate definitions were changed in response to the final holdout. Raw and normalized source records remain unchanged. See `MODEL_EVALUATION.md` and `evaluation/build_02_evaluation.json` for executed evidence.
 
 ## Forecast quantities and availability
 
@@ -16,7 +16,7 @@ Historical observed attendance is required to calculate targets after service; i
 
 ## Strict quality policy
 
-All three targets share the **same eligible rows**. Exclude the whole modeling day if either primary mass is missing, nonfinite, or negative, if diners are missing/nonpositive, or if any recorded conflict/duplicate flag is present. Conversion-from-grams and missing-menu notes alone do not invalidate an otherwise observed target. No target is imputed. All source records and notes remain in Build 01; exclusion is an explicit modeling decision, not a source correction.
+All three targets share the **same eligible rows**. Exclude the whole modeling day if either primary mass is missing, nonfinite, or negative, if diners are missing/nonpositive, or if any recorded conflict/duplicate flag is present. Conversion-from-grams and missing-menu notes alone do not invalidate an otherwise observed target. No target is imputed. All source records and notes remain available; exclusion is an explicit modeling decision, not a source correction.
 
 Official exclusions are day 18 / source row 19 (missing kitchen mass), day 136 / row 137 (both redundant per-diner conflicts), and day 151 / row 152 (redundant gram/kg and plate-per-diner conflicts). Even when a redundant field alone conflicts, this conservative policy excludes the whole paired observation rather than assert that the primary kg field is scientifically correct. Reported per-diner fields are never authoritative targets.
 
@@ -34,7 +34,7 @@ The official workbook has **152 eligible days**, comprising **134 of 135 baselin
 
 There are no post-holdout candidate searches. For operational consistency, every method uses the recent-10 fallback for missing/unseen menus; the expanding mean and Ridge therefore also have that explicit fallback. Window size 10, the two alphas, and cutoffs are fixed in the versioned configuration, not optimized against holdout outcomes. A single method is selected jointly for the two components using combined MAE; it need not be the best method for each individual component.
 
-Historical menu means are day-weighted rates, not diner-weighted aggregate ratios. This aligns them with the equally weighted per-day forecasting loss. Build 01's descriptive aggregate g/diner remains diner-weighted and is a different estimand.
+Historical menu means are day-weighted rates, not diner-weighted aggregate ratios. This aligns them with the equally weighted per-day forecasting loss. The descriptive aggregate g/diner remains diner-weighted and is a different estimand.
 
 ## Planning-time Ridge features and transformations
 
@@ -74,12 +74,12 @@ Persist only inert JSON numeric state. Ridge state contains imputer medians, sca
 
 Future date must be later than the last recorded date. A request means the **next observed service after available history**, with no invented intermediate observations or recursive forecasts. Planned diners must be an integer from 1 to 1,000,000. Forecast menu accepts missing or unseen identifiers (1–10,000) for explicit fallback, while the measured-data import schema remains 1–25. A date gap over 14 calendar days triggers a stale-history warning. This is a disclosure threshold, not a validated horizon guarantee; even smaller gaps have limited evidence. The present historical workbook is old relative to current planning dates, so operational reliability is unestablished.
 
-Synthetic batches are blocked from training/evaluation and cannot inherit a measured batch's artifact. The bundled fixture also retains its Build 01 mislabeling guard. Modified/unverified measured datasets remain explicitly user-supplied and must meet the same protocol constraints.
+Synthetic batches are blocked from training/evaluation and cannot inherit a measured batch's artifact. The bundled fixture also retains its provenance mislabeling guard. Modified/unverified measured datasets remain explicitly user-supplied and must meet the same protocol constraints.
 
 ## Reproducibility and limits
 
 Run `.venv/Scripts/python.exe scripts/evaluate_forecasts.py` after importing the official workbook. The command uses normalized SQLite records, executes evaluation afresh, compares fresh evidence/state to the persisted artifact, and writes deterministic `docs/evaluation/build_02_evaluation.json`. No network service or paid API is called. Exact package versions are in the backend lock and evidence configuration. Algorithm changes require a version bump before an existing artifact can be reused.
 
-No calibrated confidence percentages or intervals are provided. No money/carbon savings, production recommendation, optimization, or causal attribution is implemented. Ridge fails to beat the recent-history baseline on combined validation MAE. The selected baseline's holdout results do **not demonstrate reliable operational forecasting**: the sample is small, single-site, intervention-shifted, and chronologically narrow. Further prospective/external validation is required. Build 03 has not started.
+No calibrated confidence percentages or intervals are provided. Waste forecasts do not establish money/carbon savings, production quantities or causal effects. Decision Studio treats production planning separately under explicit assumptions. Ridge fails to beat the recent-history baseline on combined validation MAE. The selected baseline's holdout results do **not demonstrate reliable operational forecasting**: the sample is small, single-site, intervention-shifted, and chronologically narrow. Further prospective/external validation is required.
 
 Dataset attribution: Arja Kuusisto, Jenni Latva, Ella Wilén (2026), *Food waste dataset: secondary school in Finland 2024–2025*, [Zenodo record](https://zenodo.org/records/20825233), [DOI 10.5281/zenodo.20825233](https://doi.org/10.5281/zenodo.20825233), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Original workbook unchanged; normalized targets, exclusions, forecasts, and evaluation summaries are MealLoop OS derivatives, without implied endorsement.

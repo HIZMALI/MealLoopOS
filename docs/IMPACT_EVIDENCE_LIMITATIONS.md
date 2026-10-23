@@ -1,6 +1,6 @@
 # What Impact Ledger evidence can and cannot show
 
-Build 04 records operational reports with accounting rules and an audit trail. It does **not** demonstrate achieved food-waste reductions, a real pilot, independent verification, standards certification, calibrated confidence, food safety or causal impact. Operational examples remain explicitly synthetic.
+Impact Ledger records operational reports with accounting rules and an audit trail. It does **not** demonstrate achieved food-waste reductions, a real pilot, independent verification, standards certification, calibrated confidence, food safety or causal impact. Operational examples remain explicitly synthetic.
 
 ## Three different claims
 

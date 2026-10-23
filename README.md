@@ -92,4 +92,4 @@ Original software is [MIT licensed](LICENSE). The dataset retains CC BY 4.0; dep
 
 Development used AI assistance for code, debugging, review, tests and documentation. An LLM is not the forecasting or optimization engine. Humans remain responsible for assumptions, verification and kitchen practice.
 
-This repository's initial release commit is a curated distribution snapshot of iterative development through `c152279a93e2ee6abfbe2791b43ef7ad536967b4`; it is not the start of all development. The original development repository and history were preserved separately.
+Public history begins with a release snapshot of iterative development.
