@@ -90,14 +90,14 @@ def validate_dataset(batch, source, rows):
     if not rows:
         raise ForecastProblem("This batch has no normalized records.")
     if len(rows) > 1000:
-        raise ForecastProblem("Build 02 evaluation supports at most 1,000 school-day records.")
+        raise ForecastProblem("Forecast evaluation supports at most 1,000 school-day records.")
     dates = [r["date"] for r in rows]
     if any(d is None for d in dates) or any(a >= b for a, b in zip(dates, dates[1:])):
         raise ForecastProblem("Forecast validation needs unique, strictly chronological recorded dates. Source records remain unchanged.")
     if [r["day_index"] for r in rows] != list(range(1, len(rows) + 1)):
         raise ForecastProblem("Day indices must be contiguous in source order.")
     if batch.baseline_days != 135 or len(rows) <= 135:
-        raise ForecastProblem("This Build 02 protocol requires 135 explicitly assigned baseline days and a later holdout (official data: 20 days).")
+        raise ForecastProblem("This forecasting protocol requires 135 explicitly assigned baseline days and a later holdout (official data: 20 days).")
     if sum(not quality_reasons(r) for r in rows[:60]) < 40:
         raise ForecastProblem("Insufficient strict-quality history: the initial 60-day training window needs at least 40 eligible days.")
     for start, stop in [(60, 85), (85, 110), (110, 135), (135, len(rows))]:

@@ -138,7 +138,7 @@ def run_release_checks():
             else:
                 os.environ[key] = value
     return {"release": "0.5.0", "decision": "READY" if all(v["passed"] for v in results.values()) else "NOT READY",
-            "scope": "Local release candidate only; cloud deployment, organizer eligibility and independent security certification are unverified.", "checks": results}
+            "scope": "Local release checks only; cloud deployment, organizer eligibility and independent security certification are outside this check's scope.", "checks": results}
 
 
 def main():

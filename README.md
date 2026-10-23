@@ -86,12 +86,8 @@ npm.cmd --prefix frontend run build
 .\.venv\Scripts\python.exe scripts\publication_audit.py
 ```
 
-A failed critical release gate returns **NOT READY** and exits nonzero. The full 398-test suite is retained. [Reproduction details, fingerprints and executed release evidence](docs/REPRODUCIBILITY.md). Generated check reports default to ignored `.run/`; scientific evidence remains in `docs/evaluation/`.
+A failed critical release gate returns **NOT READY** and exits nonzero. The backend suite contains 398 tests. [Reproduction details, fingerprints and executed release evidence](docs/REPRODUCIBILITY.md). Generated check reports default to ignored `.run/`; scientific evidence remains in `docs/evaluation/`.
 
-## License and development
+## License
 
 Original software is [MIT licensed](LICENSE). The dataset retains CC BY 4.0; dependencies retain their own terms and notices. [Third-party licenses](docs/THIRD_PARTY_LICENSES.md).
-
-Development used AI assistance for code, debugging, review, tests and documentation. An LLM is not the forecasting or optimization engine. Humans remain responsible for assumptions, verification and kitchen practice.
-
-Public history begins with a release snapshot of iterative development.

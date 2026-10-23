@@ -10,7 +10,7 @@ EXPECTED_MD5 = "3f7e610fedc1810f7e8bc1bd47103ee7"
 
 
 def fetch(url):
-    with urlopen(Request(url, headers={"User-Agent": "MealLoopOS-Build01/0.1 (local research demo)"}), timeout=45) as response:
+    with urlopen(Request(url, headers={"User-Agent": "MealLoopOS/0.5.0 (dataset download)"}), timeout=45) as response:
         data = response.read(10 * 1024 * 1024 + 1)
     if len(data) > 10 * 1024 * 1024:
         raise RuntimeError("Remote content exceeds the 10 MiB limit.")

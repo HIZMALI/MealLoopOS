@@ -19,9 +19,9 @@ MealLoop OS changes the *representation*: normalized field names, ISO dates, row
 
 The source describes daily school measurements from August 2024 to April 2025: 135 baseline days followed by 20 days of artist-designed interventions. That intervention predates this software. See `docs/DATA_DICTIONARY.md` for the inspection findings.
 
-## Local database
+## Prepared demo and local storage
 
-`public_demo/forecast_artifact.json` is an inert prepared predictor and a copy of the unchanged Build 02 evaluation derived from the attributed Finland measurements. It was freshly reproduced and compared to that historical evaluation; it contains no uploaded/private data or executable model serialization. Representation/estimates are derived; the raw measurements remain unchanged. Public-demo preparation validates this file and seeds a separate ignored `.public-demo/` database. Synthetic planning/operational examples are automatically seeded only in that isolated public environment, never into the normal local DB. Fixed synthetic capture/import metadata supports repeatability and is not evidence of service occurrence. See `docs/PUBLIC_DEMO_SECURITY.md`.
+`public_demo/forecast_artifact.json` is an inert prepared predictor and a copy of the unchanged historical forecast evaluation derived from the attributed Finland measurements. It was reproduced and compared to that evaluation; it contains no uploaded/private data or executable model serialization. Representation/estimates are derived; the raw measurements remain unchanged. Public-demo preparation validates this file and seeds a separate ignored `.public-demo/` database. Synthetic planning/operational examples are automatically seeded only in that isolated public environment, never into the normal local DB. Fixed synthetic capture/import metadata supports repeatability and is not evidence of service occurrence. See `docs/PUBLIC_DEMO_SECURITY.md`.
 
 `mealloop.db` is created locally and ignored by Git. Sources, immutable batches, and normalized rows are separate tables. UI upload bytes are discarded after normalization. Keep the original uploaded file externally if you need exact-file reproducibility; batch SHA-256 and display filename remain in the database.
 

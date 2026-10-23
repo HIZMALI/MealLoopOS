@@ -19,7 +19,7 @@ npm.cmd --prefix frontend ls --all
 .\.venv\Scripts\python.exe scripts\publication_audit.py
 ```
 
-Run commands individually and stop on any nonzero exit; PowerShell does not automatically stop on native command failures. The complete **398-test suite** remains represented. The release checker fails on missing public documentation, dependency mismatch, changed fingerprints, unclassified API routes, unsafe configuration, isolation/read-only failures or nonreproducible seed/restart behavior. Its gate logic is retained; only obsolete internal-report requirements were replaced by the public methodology/security/reproduction documents.
+Run commands individually and stop on any nonzero exit; PowerShell does not automatically stop on native command failures. The backend suite contains **398 tests**. The release checker fails on missing public documentation, dependency mismatch, changed fingerprints, unclassified API routes, unsafe configuration, isolation/read-only failures or nonreproducible seed/restart behavior.
 
 The HTTP smoke starts fresh-seed, prepared-restart and ephemeral-reseed servers from allowlisted public files. It tests writes/default-deny, Host/Origin rejection, private cohort bounds, all three stateless previews, notice delivery and unchanged DB bytes. It never copies the operator's normal database. Check reports default to ignored `.run/`. A compact executed snapshot, including separate external HTTPS checks, is retained in `evaluation/release_verification.json`. See `DEPLOYMENT_GUIDE.md` for the observed cloud scope and remaining limits; none of these checks is a provider certification.
 
@@ -45,7 +45,7 @@ The individual forecast command uses the selected official batch in the local DB
 | `docs/evaluation/build_04_evaluation.json` | `d09e6523bcbc6f0efb5748f9b102273b3a1452527a8ce2fd00b9d72d4c8b863c` |
 | `data/public_demo/forecast_artifact.json` | `2142d76e9139eb62b45d6950599c41c9327f3bd0e4aa9683540f7fdb8655c524` |
 
-The historical filenames identify the evaluation protocol's original development stage; they are scientific artifacts, not development diaries. All candidate metrics, exclusions and chronological ledgers remain available. Algorithm versions and dependency identities are unchanged.
+Historical evaluation files retain their original filenames and protocol identities. They include all candidate metrics, exclusions and chronological ledgers.
 
 The recent-10 baseline's combined validation MAE is 12.554174 g/diner; separate holdout MAE is 8.730282 over 18 eligible outcomes. Synthetic arithmetic verifies 440 portions, a 16 kg modeled difference, an 8 kg portion estimate and a separate 9.7 kg simulated inventory. These are not achieved savings or a real pilot. Review the forecast/decision/impact methodologies before changing definitions or validation policy.
 
@@ -54,5 +54,3 @@ The recent-10 baseline's combined validation MAE is 12.554174 g/diner; separate 
 `publication_audit.py` scans working and staged bytes independently, every local Git blob, ref/reflog trees and commit metadata. It checks private paths, SQLite signatures and common credential patterns, including bounded XLSX archive members. Ignored runtime contents are not published in its report. Findings contain identifiers rather than secret values. This heuristic and visual screenshot review do not prove absence of secrets or replace independent security assessment.
 
 `scripts/license_inventory.py` rebuilds declarations/notices from installed exact dependencies and the retained source-license supplements. The Windows snapshot contains 41 Python packages and 129 npm lock entries; optional binaries on other platforms require their own review. See `THIRD_PARTY_LICENSES.md`. Dependency advisory checks are time-dependent; rerun `npm audit` and a separate `pip-audit` installation before a new release.
-
-Public history begins with a release snapshot of iterative, AI-assisted development. Scientific algorithms, protocol identities, tests, applied migrations and historical evidence remain versioned and reproducible.
